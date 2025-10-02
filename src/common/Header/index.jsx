@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 import Button from "../Button";
 
-const Header = ({handleTogglecontactForm}) => {
+const Header = ({ handleTogglecontactForm }) => {
   return (
     <header style={{ backgroundColor: "#fff9eb" }}>
       <div className="container">
@@ -22,13 +22,14 @@ const Header = ({handleTogglecontactForm}) => {
                 btnIcon={"phone"}
                 textColor={"#42474D"}
                 btnTitle2={"+91 9990110596"}
+                link={"tel:+919990110596"}
                 iconColor={"#ae8624"}
               />
             </div>
 
             <div className={styles.enquiryCta}>
               <Button
-              onClick={handleTogglecontactForm}
+                onClick={handleTogglecontactForm}
                 bgColor={"#a98927"}
                 btnIcon={"arrow-right"}
                 textColor={"#ffff"}

@@ -33,3 +33,42 @@
   color: #fff;
   transform: scale(1.1) rotate(90deg);
 }
+
+.slick-center-mobile .slick-slide {
+    padding: 0 10px; /* Add some spacing between slides */
+}
+
+.slick-center-mobile.slick-center .slick-current .slick-slide {
+    /* Optional: if you want to scale up the center slide */
+    transform: scale(1.05);
+}
+
+@media (max-width: 1400px) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 20px;
+    }
+}

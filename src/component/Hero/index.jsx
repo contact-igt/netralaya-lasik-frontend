@@ -2,7 +2,7 @@ import Number from "@/common/Number";
 import styles from "./styles.module.css";
 import Form from "@/common/Form";
 
-const Hero = () => {
+const Hero = ({handleTogglecontactForm}) => {
   return (
     <section>
       <div className="container-fluid px-1 px-md-3 px-lg-5">
@@ -15,7 +15,7 @@ const Hero = () => {
             <p>Cataract Surgery That Brings Life Into Focus</p>
           </div>
           <div className={`${styles.layerForm}`}>
-            <Form />
+            <Form handleTogglecontactForm={handleTogglecontactForm} />
           </div>
           <div className={`${styles.layerNumber} w-100`}>
             <Number />
