@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 const Number = () => {
   return (
     <div className={styles.countWrapper}>
-      <div className="d-flex align-items-center justify-content-evenly text-center">
+      <div className="d-flex gap-3 flex-column flex-md-row align-items-center justify-content-evenly text-center">
         {HomeConstantData?.Number?.map((data, i) => (
           <div className={styles.countNums} key={i}>
             <h6>

@@ -1,17 +1,27 @@
 import Footer from "@/common/Footer";
+import Form from "@/common/Form";
 import Header from "@/common/Header";
+import { Popup } from "@/common/Popup";
 import "@/styles/globals.css";
+import { useState } from "react";
 
 export default function App({ Component, pageProps }) {
-  return(
+  const [open, setOpen] = useState(false);
+  const handleTogglecontactForm = () => {
+    setOpen(!open);
+  };
+  return (
     <>
 
-    <Header/>
+      <Header handleTogglecontactForm={handleTogglecontactForm}  />
 
-     <Component {...pageProps} />
+      <Component {...pageProps} handleTogglecontactForm={handleTogglecontactForm} />
+      <Popup open={open} onClose={() => handleTogglecontactForm()}>
+        <Form
+        />
+      </Popup>
+      <Footer />
 
-    <Footer/>
-    
     </>
   )
 }

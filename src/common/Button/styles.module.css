@@ -1,5 +1,9 @@
 .btnWrapper {
     padding: 15px 20px;
     border-radius: 10px;
+     transition: transform 0.3s ease; 
 }
 
+.btnWrapper:hover{
+    transform: scale(1.1);
+}

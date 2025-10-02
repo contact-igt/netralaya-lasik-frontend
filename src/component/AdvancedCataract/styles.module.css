@@ -140,10 +140,44 @@
 .text {
     color: #a77d1b;
     font-size: 1rem;
-    line-height: 1.7;
-    margin: 0;
     padding-right: 2rem;
     font-weight: 600;
+}
+
+@media (max-width: 1400px) {
+    .cardWrapper h4,
+    .abtCatractWrapper h4 {
+        font-size: 28px;
+    }
+    .cardWrapper p,
+    .abtCatractWrapper p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cardWrapper h4,
+    .abtCatractWrapper h4 {
+        font-size: 26px;
+    }
+    .cardWrapper p,
+    .abtCatractWrapper p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cardWrapper h4,
+    .abtCatractWrapper h4 {
+        font-size: 24px;
+    }
+    .cardWrapper p,
+    .abtCatractWrapper p {
+        font-size: 15px;
+    }
+    .title {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -152,16 +186,47 @@
     }
 
     .title {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 
     .text {
-        font-size: 0.9375rem;
+        font-size: 0.9rem;
         padding-right: 0;
     }
 
     .dot {
         width: 14px;
         height: 14px;
+    }
+    .cardWrapper h4,
+    .abtCatractWrapper h4 {
+        font-size: 22px;
+    }
+    .cardWrapper p,
+    .abtCatractWrapper p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cardWrapper {
+        padding: 20px;
+    }
+    .abtQuestionWrapper {
+        padding: 20px 15px;
+    }
+    .cardWrapper h4,
+    .abtCatractWrapper h4 {
+        font-size: 20px;
+    }
+    .cardWrapper p,
+    .abtCatractWrapper p {
+        font-size: 13px;
+    }
+    .title {
+        font-size: 0.9rem;
+    }
+    .text {
+        font-size: 0.8rem;
     }
 }

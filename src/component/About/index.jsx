@@ -1,7 +1,7 @@
 import Button from "@/common/Button";
 import styles from "./styles.module.css";
 
-const About = ({ aboutData }) => {
+const About = ({ aboutData, handleTogglecontactForm }) => {
   return (
     <section>
       <div className="container">
@@ -18,6 +18,7 @@ const About = ({ aboutData }) => {
               </p>
               <div className={styles.aboutBtn}>
                 <Button
+                onClick={handleTogglecontactForm}
                   btnTitle={"Book Your Consultation Today !"}
                   bgColor={"#a98927"}
                   textColor={"#ffff"}

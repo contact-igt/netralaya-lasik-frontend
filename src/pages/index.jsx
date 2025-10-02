@@ -1,7 +1,8 @@
 import HomePageComponent from "@/pageComponents/Home";
-
-export default function Home() {
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+export default function Home({handleTogglecontactForm}) {
   return (
-    <HomePageComponent/>
+    <HomePageComponent handleTogglecontactForm={handleTogglecontactForm} />
   )
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 import Button from "../Button";
 
-const Header = () => {
+const Header = ({handleTogglecontactForm}) => {
   return (
     <header style={{ backgroundColor: "#fff9eb" }}>
       <div className="container">
@@ -28,6 +28,7 @@ const Header = () => {
 
             <div className={styles.enquiryCta}>
               <Button
+              onClick={handleTogglecontactForm}
                 bgColor={"#a98927"}
                 btnIcon={"arrow-right"}
                 textColor={"#ffff"}

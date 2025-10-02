@@ -9,8 +9,7 @@ const Form = () => {
       name: "",
       mobile: "",
     },
-
-    validationSchema: Yup.object().shape({
+    validationSchema: Yup.object({
       name: Yup.string()
         .required("Name is required")
         .matches(/^[A-Za-z\s']+$/, "Enter valid name"),
@@ -18,9 +17,8 @@ const Form = () => {
         .matches(/^[0-9]{10}$/, "Mobile must be 10 digits")
         .required("Mobile is required"),
     }),
-
     onSubmit: (values) => {
-      console.log("value", values);
+      console.log("Form values:", values);
     },
   });
 
@@ -38,10 +36,8 @@ const Form = () => {
             placeholder="Name"
             {...formik.getFieldProps("name")}
           />
-          {formik.touched.name && formik.errors.name ? (
+          {formik.touched.name && formik.errors.name && (
             <small className="text-danger">{formik.errors.name}</small>
-          ) : (
-            ""
           )}
         </div>
         <div className={styles.inputgrp}>
@@ -51,23 +47,22 @@ const Form = () => {
             placeholder="Mobile"
             {...formik.getFieldProps("mobile")}
           />
-          {formik.touched.mobile && formik.errors.mobile ? (
+          {formik.touched.mobile && formik.errors.mobile && (
             <small className="text-danger">{formik.errors.mobile}</small>
-          ) : (
-            ""
           )}
         </div>
 
         <div className={styles.inputgrp}>
           <Button
-            btnTitle={"Submit"}
-            bgColor={"#42474D"}
-            textColor={"#fff"}
-            type={"submit"}
+            btnTitle="Submit"
+            bgColor="#42474D"
+            textColor="#fff"
+            type="submit"
           />
         </div>
       </form>
     </div>
   );
 };
+
 export default Form;

@@ -8,10 +8,12 @@ const Button = ({
   btnTitle2,
   iconColor,
   type,
+  onClick,
   textColor,
 }) => {
   return (
     <button
+    onClick={onClick}
       type={type ? type : "button"}
       className={`${styles.btnWrapper} btn d-flex align-items-center justify-content-center text-center gap-2 `}
       style={{ backgroundColor: bgColor, color: textColor, cursor: "pointer" }}

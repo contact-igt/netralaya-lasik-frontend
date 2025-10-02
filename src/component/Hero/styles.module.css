@@ -15,6 +15,7 @@
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
+    position: absolute;
 }
 
 .layerText {
@@ -43,4 +44,97 @@
     bottom: 66px;
     background-color: #fdd87fa8;
     left: 0px;
+    position: absolute;
+}
+
+@media (max-width: 1400px) {
+    .layerText h4 {
+        font-size: 80px;
+    }
+
+    .layerText p {
+        font-size: 32px;
+    }
+
+    .layerForm {
+        width: 450px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bgWrapper {
+        height: 800px;
+    }
+
+    .layerText h4 {
+        font-size: 70px;
+    }
+
+    .layerText p {
+        font-size: 28px;
+    }
+
+    .layerForm,
+    .layerText {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .bgWrapper {
+        height: 480px;
+        padding-bottom: 80px;
+    }
+
+    .layerForm {
+        position: relative;
+        width: 100%;
+        margin: 40px auto 0;
+        top: 0;
+        right: 0;
+    }
+
+    .layerText {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        padding-top: 60px;
+    }
+
+    .layerNumber {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+       .bgWrapper {
+        height: 430px;
+    }
+    .layerText h4 {
+        font-size: 60px;
+    }
+
+    .layerText p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+     .bgWrapper {
+        height: 400px;
+    }
+    .layerText h4 {
+        font-size: 48px;
+    }
+
+    .layerText p {
+        font-size: 20px;
+    }
+
+    .layerForm {
+        padding: 20px;
+    }
 }
