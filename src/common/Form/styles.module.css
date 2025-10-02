@@ -1,0 +1,25 @@
+
+
+.inputgrp {
+    margin-top: 25px;
+}
+
+.formTopic {
+    background-color: #deb24ae6;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.inputgrp input,
+.inputgrp input:active,
+.inputgrp input:focus {
+    border: 2px solid #b5b6b8;
+    padding: 10px;
+    box-shadow: none !important;
+}
+
+.inputgrp button {
+    width: 100%;
+}

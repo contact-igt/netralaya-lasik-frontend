@@ -1,0 +1,10 @@
+.countNums h6 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.countWrapper {
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
