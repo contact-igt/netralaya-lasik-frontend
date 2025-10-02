@@ -1,6 +1,9 @@
+import About from "@/component/About";
 import AdvancedCataract from "@/component/AdvancedCataract";
+import Faq from "@/component/Faq";
 import Hero from "@/component/Hero";
 import StickyForm from "@/component/StickyForm";
+import TestimonalText from "@/component/TestimonalText";
 import { HomeConstantData } from "@/constant/Home";
 
 const HomePageComponent = () => {
@@ -14,6 +17,12 @@ const HomePageComponent = () => {
             <AdvancedCataract
               cataractData={HomeConstantData?.AdvancedCataract}
             />
+
+            <About aboutData={HomeConstantData?.About}/>
+
+            <TestimonalText />
+
+            <Faq />
           </div>
           <div className="col-lg-4">
             <StickyForm />

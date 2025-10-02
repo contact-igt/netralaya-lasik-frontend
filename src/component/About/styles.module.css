@@ -1,0 +1,48 @@
+.aboutWrapper h4 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.aboutWrapper p {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #42474D;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.aboutBtn button {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+
+.bgWrapper {
+    width: 100%;
+    height: 330px;
+    background-color: #fad47ce6;
+    border-radius: 100%;
+}
+
+.bgimgWrapper {
+    top: 30px;
+    left: 30px;
+}
+
+.bgimgWrapper img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.imgDetail h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.imgDetail h6 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #a98927;
+}
