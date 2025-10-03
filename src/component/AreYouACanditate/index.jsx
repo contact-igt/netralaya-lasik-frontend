@@ -16,11 +16,13 @@ const AreYouACanditate = ({ data, handleTogglecontactForm }) => {
             <div className="col-xl-4 col-md-6 col-12">
               <div key={index} className={styles.conditionItem}>
                 <div>
+                  <div className={data?.cataractConditions.length - 1 == index ? styles.yellowOverlay : ""}>
                   <img
                     src={item?.image}
                     className={styles.image}
                     alt={item?.title}
                   />
+                  </div>
                 </div>
                 <div className={styles.content}>
                   <p className={styles.conditionDescription}>{item?.title}</p>

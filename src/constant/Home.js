@@ -56,22 +56,24 @@ export const HomeConstantData = {
         id: 2,
         question: "Laser-Assisted Cataract Surgery (LACS)",
         answer:
-          "Our experienced surgeons use an advanced, minimally invasive ultrasound technique to remove the cataract through a tiny incision. The cloudy lens is then replaced with a premium intraocular lens (IOL) tailored to your lifestyle and vision needs.",
+          "Imagine cataract surgery where every step is guided by advanced laser technology instead of relying solely on handheld instruments. With LACS, our surgeons achieve unparalleled precision in lens placement and incisions—tailored exactly to your eye’s unique anatomy.",
+        pointsHeader: "What this means for you:",
         points: [
-          "Clearer vision",
-          "Faster recovery",
-          "Reduced need for glasses",
+          "Sharper, clearer vision sooner",
+          "Greater safety and accuracy",
+          "A treatment customized for your eyes",
         ],
       },
       {
         id: 3,
         question: "Microincision Cataract Surgery (MICS)",
         answer:
-          "Our experienced surgeons use an advanced, minimally invasive ultrasound technique to remove the cataract through a tiny incision. The cloudy lens is then replaced with a premium intraocular lens (IOL) tailored to your lifestyle and vision needs.",
+          "For patients seeking a faster, less invasive option, MICS uses an incision less than 2 mm—so small it often doesn’t require stitches. This ultra-fine technique reduces strain on the eye, promotes rapid healing, and helps you get back to daily life sooner.",
         points: [
-          "Clearer vision",
-          "Faster recovery",
-          "Reduced need for glasses",
+          "Tiny incision = quicker healing",
+          "Reduced discomfort post-surgery",
+          "Lower risk of complications",
+          "Better visual outcomes with minimal trauma",
         ],
       },
     ],
