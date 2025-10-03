@@ -18,7 +18,7 @@ h6 {
   margin-bottom: 0px;
 }
 
-section{
+section {
   margin-top: 80px;
 }
 
@@ -51,7 +51,7 @@ a {
 .slick-prev,
 .slick-next {
   top: unset !important;
-  bottom: -100px; 
+  bottom: -100px;
 }
 
 
@@ -65,7 +65,13 @@ a {
   right: 20px !important;
   transform: translateX(100%);
 }
+
+
 @media (width < 576px) {
+
+  section {
+    margin-top: 50px !important;
+  }
 
   .slick-prev,
   .slick-next {

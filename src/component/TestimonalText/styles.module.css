@@ -17,14 +17,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.75) 40%,
-    rgba(0, 0, 0, 0.5) 70%,
-    rgba(0, 0, 0, 0.2) 95%,
-    transparent 100%
-  );
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.75) 40%,
+      rgba(0, 0, 0, 0.5) 70%,
+      rgba(0, 0, 0, 0.2) 95%,
+      transparent 100%);
 
   z-index: 1;
   border-radius: 20px;
@@ -39,9 +37,11 @@
   position: relative;
   z-index: 2;
 }
+
 .testimonialContent h5 {
   font-size: 1.9rem;
 }
+
 .quoteIcon {
   width: 60px;
   height: 60px;
@@ -73,6 +73,7 @@
   position: relative;
   border-radius: 20px;
 }
+
 .moreContent1Overlay {
   content: "";
   position: absolute;
@@ -80,15 +81,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom right,
-    rgba(204, 153, 51, 0.85) 0%,
-    /* #CC9933 at 85% opacity */ rgba(204, 153, 51, 0.55) 50%,
-    /* softer gold at mid-point */ rgba(0, 0, 0, 0.25) 100%
+  background: linear-gradient(to bottom right,
+      rgba(204, 153, 51, 0.85) 0%,
+      /* #CC9933 at 85% opacity */
+      rgba(204, 153, 51, 0.55) 50%,
+      /* softer gold at mid-point */
+      rgba(0, 0, 0, 0.25) 100%
       /* darker fade for contrast */
-  );
+    );
   border-radius: 20px;
 }
+
 .moreContent2 {
   background: url("/assets/testimonialTextImage3.JPG");
   background-size: cover;
@@ -102,6 +105,7 @@
   position: relative;
   border-radius: 20px;
 }
+
 .moreContent2Overlay {
   content: "";
   position: absolute;
@@ -109,21 +113,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.75) 25%,
-    rgba(0, 0, 0, 0.5) 60%,
-    rgba(0, 0, 0, 0.2) 90%,
-    transparent 100%
-  );
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.75) 25%,
+      rgba(0, 0, 0, 0.5) 60%,
+      rgba(0, 0, 0, 0.2) 90%,
+      transparent 100%);
   border-radius: 20px;
 }
+
 .content {
   margin-top: 30px;
   width: 80%;
   z-index: 2;
 }
+
 :where(.moreContent1, .moreContent2) .content p {
   font-size: 1.7rem;
   color: #fff;
@@ -133,93 +137,129 @@
 }
 
 .content button {
-    margin-top: 8px;
-    padding: 12px 15px;
+  margin-top: 8px;
+  padding: 12px 15px;
 }
 
-@media (max-width: 1200px) {
-    .testimonialContent {
-        width: 70%;
-    }
-    .testimonialContent h5 {
-        font-size: 1.7rem;
-    }
-    :where(.moreContent1, .moreContent2) .content p {
-        font-size: 1.5rem;
-    }
-    .testimonialMore {
-        gap: 20px;
-    }
-    .moreContent1, .moreContent2 {
-        width: 320px;
-    }
+@media (width < 1200px) {
+  .testimonialContent {
+    width: 70%;
+  }
+
+
+
+  .testimonialContent h5 {
+    font-size: 1.7rem;
+  }
+
+  .testimonialMore {
+    width: 100%;
+    left: 0px;
+    top: 75%;
+  }
+
+  :where(.moreContent1, .moreContent2) .content p {
+    font-size: 1.5rem;
+  }
+
+  .testimonialMore {
+    gap: 20px;
+  }
+
+  .moreContent1,
+  .moreContent2 {
+    width: 320px;
+  }
+
+  .content p {
+    font-size: 24px;
+    height: 170px;
+  }
 }
 
-@media (max-width: 992px) {
-    .testimonialContainer {
-        height: auto;
-        padding-bottom: 350px; 
-    }
-    .testimonialContent {
-        width: 90%;
-    }
-    .testimonialMore {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        left: 0;
-        bottom: -150px;
-    }
-    .moreContent1, .moreContent2 {
-        width: 80%;
-        max-width: 400px;
-    }
+@media (width < 992px) {
+  .testimonialContainer {
+    height: auto;
+    padding-bottom: 300px;
+  }
+
+  .testimonialContent {
+    width: 90%;
+  }
+
+  .testimonialMore {
+    /* flex-direction: column; */
+    align-items: center;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    top: 84%;
+  }
+
+  .moreContent1,
+  .moreContent2 {
+    width: 80%;
+    max-width: 400px;
+  }
 }
 
-@media (max-width: 768px) {
-    .testimonialContainer {
-        padding: 60px 20px;
-        padding-bottom: 30px;
-        margin-top: 80px;
-    }
-    .testimonialMore {
-        position: relative;
-        flex-direction: column;
-        bottom: auto;
-        margin-top: 40px;
-    }
-    .testimonialContent {
-        width: 100%;
-    }
-    .testimonialContent h5 {
-        font-size: 1.5rem;
-    }
-    :where(.moreContent1, .moreContent2) .content p {
-        font-size: 1.4rem;
-    }
-    .moreContent1, .moreContent2 {
-        width: 100%;
-        max-width: 100%;
-        height: 250px;
-    }
+@media (width < 768px) {
+  .testimonialContainer {
+    padding: 60px 20px;
+    padding-bottom: 30px;
+    margin-top: 80px;
+  }
+
+  .testimonialMore {
+    position: relative;
+    flex-direction: column;
+    bottom: auto;
+    margin-top: 40px;
+  }
+
+  .testimonialContent {
+    width: 100%;
+  }
+
+  .testimonialContent h5 {
+    font-size: 1.5rem;
+  }
+
+  :where(.moreContent1, .moreContent2) .content p {
+    font-size: 1.4rem;
+  }
+
+  .moreContent1,
+  .moreContent2 {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+  .content p{
+    height: 120px;
+  }
 }
 
-@media (max-width: 576px) {
-    .testimonialContainer {
-        padding: 40px 15px;
-        padding-bottom: 30px;
-    }
-    .testimonialContent h5 {
-        font-size: 1.3rem;
-    }
-    .testimonialName {
-        font-size: 18px;
-    }
-    :where(.moreContent1, .moreContent2) .content p {
-        font-size: 1.2rem;
-    }
-    .content button {
-        font-size: 14px;
-        padding: 10px 12px;
-    }
+@media (width < 576px) {
+  .testimonialContainer {
+    padding: 40px 15px;
+    padding-bottom: 30px;
+  }
+
+  .testimonialContent h5 {
+    font-size: 1.3rem;
+  }
+
+  .testimonialName {
+    font-size: 18px;
+  }
+
+  :where(.moreContent1, .moreContent2) .content p {
+    font-size: 1.2rem;
+  }
+
+  .content button {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
 }

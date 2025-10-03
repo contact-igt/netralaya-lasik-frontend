@@ -5,7 +5,7 @@ import Form from "@/common/Form";
 const Hero = ({handleTogglecontactForm}) => {
   return (
     <section>
-      <div className="container-fluid px-1 px-md-3 px-lg-5">
+      <div className="container">
         <div className={`position-relative ${styles.heroContainer}`}>
           <div className={styles.bgWrapper}></div>
           <div className={`${styles.layerText} position-absolute`}>

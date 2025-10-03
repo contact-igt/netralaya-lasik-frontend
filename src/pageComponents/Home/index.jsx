@@ -24,7 +24,10 @@ const HomePageComponent = ({ handleTogglecontactForm }) => {
             <HowItsUnique data={HomeConstantData?.HowItsUnique} />
             <AreYouACanditate data={HomeConstantData?.areYouACanditate} handleTogglecontactForm={handleTogglecontactForm} />
             <InsightfulVideos data={HomeConstantData?.InsightfulVideos} />
-            <TestimonalText data={HomeConstantData?.TestimonalText} handleTogglecontactForm={handleTogglecontactForm} />
+            <TestimonalText
+              data={HomeConstantData?.TestimonalText}
+              handleTogglecontactForm={handleTogglecontactForm}
+            />
             <Faq data={HomeConstantData?.Faq} />
           </div>
           <div className={`col-lg-4 d-none d-lg-block ${styles.rightContent}`}>

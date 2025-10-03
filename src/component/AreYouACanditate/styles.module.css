@@ -1,5 +1,4 @@
 .areYouCanditate {
-  padding: 60px 0px;
   text-align: center;
 }
 
@@ -20,12 +19,7 @@
   color: #555;
 }
 
-.conditionList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
-}
+
 
 .conditionItem {
   background: #deb24a;
@@ -35,6 +29,9 @@
   color: #42474d;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 280px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .conditionItem img {
@@ -54,87 +51,86 @@
   font-weight: 500;
   line-height: 1.4;
 }
-.buttonGroup{
-    margin: 50px 0 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.buttonGroup button{
-    background-color:#a98927 ;
-    color: white;
-}
-.buttonGroup button:hover{
-    background-color:#a98927;
-    color: white;
-}
-.image{
-  object-position: top;
-}
-@media (max-width: 1400px) {
-  .conditionList {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-  }
+
+.buttonGroup {
+  margin: 50px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.buttonGroup button {
+  background-color: #a98927;
+  color: white;
+}
+
+.buttonGroup button:hover {
+  background-color: #a98927;
+  color: white;
+}
+
+.image {
+  object-position: top;
+}
+
+
 /* Large screens */
-@media (max-width: 1200px) {
-  .conditionList {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
+@media (width < 1200px) {
+
   .conditionItem img {
     height: 160px;
   }
+
 }
 
 /* Medium screens */
-@media (max-width: 992px) {
-  .conditionList {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 18px;
-  }
+@media (width < 992px) {
+
   .conditionItem img {
     height: 150px;
   }
 }
 
 /* Small screens */
-@media (max-width: 768px) {
-  .conditionList {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 15px;
-  }
+@media (width < 768px) {
+
   .conditionItem img {
     height: 140px;
   }
+
+  .conditionItem{
+    height: 250px;
+  }
+
   .title {
     font-size: 1.8rem;
   }
+
   .description {
     font-size: 1rem;
   }
+
   .conditionDescription {
     font-size: 0.95rem;
   }
 }
 
 /* Extra small screens */
-@media (max-width: 576px) {
-  .conditionList {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
-  }
+@media (width < 576px) {
+
+
   .conditionItem img {
-    height: 120px;
+    height: 150px;
   }
+
   .title {
     font-size: 1.5rem;
   }
+
   .description {
     font-size: 0.95rem;
   }
+
   .conditionDescription {
     font-size: 0.9rem;
   }

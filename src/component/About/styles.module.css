@@ -1,6 +1,7 @@
 .aboutWrapper h4 {
     font-size: 30px;
     font-weight: 600;
+    text-align: start;
 }
 
 .aboutWrapper p {
@@ -8,12 +9,11 @@
     font-size: 18px;
     color: #42474D;
     text-align: justify;
-    line-height: 1.7;
 }
 
 .aboutBtn button {
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 
@@ -47,76 +47,152 @@
     color: #a98927;
 }
 
-@media (max-width: 1400px) {
+@media (width < 1400px) {
     .aboutWrapper h4 {
         font-size: 28px;
     }
+
     .aboutWrapper p {
         font-size: 17px;
     }
+
+    .bgWrapper {
+        height: 270px;
+    }
+
+    .bgimgWrapper img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .aboutBtn button {
+        margin-top: 30px;
+    }
+
+
 }
 
-@media (max-width: 1200px) {
+@media (width < 1200px) {
     .aboutWrapper h4 {
         font-size: 26px;
     }
+
+
     .aboutWrapper p {
         font-size: 16px;
+        text-align: start;
+
     }
+
     .aboutBtn button {
         font-size: 18px;
     }
+
+    .aboutWrapper {
+        text-align: start;
+        margin: 20px 0px;
+    }
+
+    .bgWrapper {
+        height: 230px;
+    }
+
+    .bgimgWrapper img {
+        width: 200px;
+        height: 200px;
+    }
+
+
 }
 
-@media (max-width: 992px) {
+@media (width < 992px) {
     .aboutWrapper {
         text-align: center;
     }
+
     .aboutWrapper h4 {
         font-size: 24px;
     }
+
     .aboutWrapper p {
         font-size: 15px;
     }
+
     .aboutimgWrapper {
         margin-top: 40px;
     }
-    .bgimgWrapper{
-        top: 29px;
-        left: 200px;
+
+
+    .bgWrapper {
+        width: 400px;
+        height: 400px;
+        margin: 0px 150px;
+    }
+
+    .bgimgWrapper {
+        top: 101px;
+        left: 212px;
+    }
+
+    .bgimgWrapper img {
+        width: 300px;
+        height: 300px;
     }
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
     .aboutWrapper h4 {
         font-size: 22px;
     }
+
     .aboutWrapper p {
         font-size: 14px;
     }
+
     .aboutBtn button {
         font-size: 16px;
     }
-     .bgimgWrapper{
-        top: 29px;
-        left: 100px;
+
+    .bgWrapper {
+        margin: 0px 110px;
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .bgimgWrapper {
+        top: 0px;
+        left: 118px;
     }
 }
 
-@media (max-width: 576px) {
+@media (width < 576px) {
     .aboutWrapper h4 {
         font-size: 20px;
     }
+
     .aboutWrapper p {
         font-size: 13px;
     }
+
     .aboutBtn button {
         font-size: 14px;
     }
+
     .bgWrapper {
-        left: 100px;
-        height: 280px;
+        margin: 0px;
+        width: 100%;
     }
+
+    .bgimgWrapper {
+        left: 47px;
+        height: 280px;
+        margin: 0px;
+        top: 13%;
+
+    }
+
     .bgimgWrapper img {
         width: 250px;
         height: 250px;

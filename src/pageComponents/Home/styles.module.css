@@ -1,15 +1,22 @@
 
-.layoutContainer {
+/* .layoutContainer {
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 15px; 
-}
+} */
+
 .mainrow{
     display: flex;
   align-items: stretch;
 }
-.contentContainer {
+/* .contentContainer {
   max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 15px;
+} */
+
+.contentContainer {
+  max-width: 1350px;
   margin: 0 auto;
   padding: 0 15px;
 }

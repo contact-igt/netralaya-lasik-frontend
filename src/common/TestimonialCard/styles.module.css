@@ -45,11 +45,13 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease,
     background-color 0.3s ease;
 }
+
 .playButton:hover {
   transform: translate(-50%, -50%) scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   background-color: #ff0000;
 }
+
 .textContainer {
   color: #000;
 }
@@ -116,6 +118,7 @@
   border-radius: 10px;
   padding: 8px;
 }
+
 .nameContainer h4 {
   font-size: 1rem;
 }
@@ -131,4 +134,17 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+
+@media (width < 1200px) {
+
+  .imageContainer {
+    width: 270px;
+  }
+
+  .playButton{
+    top: 42%;
+  }
+
 }
