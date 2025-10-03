@@ -57,11 +57,11 @@ const Form = ({ handleTogglecontactForm }) => {
         const data = await res.json();
 
         Formik.resetForm();
-        handleTogglecontactForm();
-        // router.replace("/thank-you");
+        handleTogglecontactForm(false);
+        router.replace("/thank-you");
       } catch (err) {
         console.error("Error:", err);
-        // handleTogglecontactForm();
+        handleTogglecontactForm(false);
       } finally {
         setisLoading(false);
       }

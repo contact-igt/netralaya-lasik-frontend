@@ -1,5 +1,3 @@
-
-
 export const HomeConstantData = {
   Number: [
     {
@@ -169,14 +167,16 @@ export const HomeConstantData = {
       {
         name: "Karnal Charanjit Nagarath",
         imageSrc: "/assets/testimonialImage2.png",
-        testimonial: "I had trouble seeing colors and was diagnosed with cataracts in both eyes. I chose Center for Sight and Dr. Prateek Tiwari for surgery. Both surgeries were smooth, and the staff followed all protocols carefully. Now my vision is much clearer, and I can distinguish colors easily!",
+        testimonial:
+          "I had trouble seeing colors and was diagnosed with cataracts in both eyes. I chose Center for Sight and Dr. Prateek Tiwari for surgery. Both surgeries were smooth, and the staff followed all protocols carefully. Now my vision is much clearer, and I can distinguish colors easily!",
         videoUrl:
           "https://www.youtube.com/embed/EaUCdR_nG5c?si=9r_WNXFtIDEVBdpC",
       },
       {
         name: "Kamlesh Agrawal",
         imageSrc: "/assets/testimonialImage3.png",
-        testimonial: "I struggled with vision problems for about a year before consulting Dr. Prateek. The cataract surgery was painless and successful. Seven days later, my distance vision improved significantly, though I still need glasses for near tasks. The staff’s care and professionalism made the experience excellent!",
+        testimonial:
+          "I struggled with vision problems for about a year before consulting Dr. Prateek. The cataract surgery was painless and successful. Seven days later, my distance vision improved significantly, though I still need glasses for near tasks. The staff’s care and professionalism made the experience excellent!",
         videoUrl:
           "https://www.youtube.com/embed/qNG1-MIPEFw?si=pvaZxJulkeYkve_a",
       },
@@ -200,45 +200,45 @@ export const HomeConstantData = {
     title: "Frequently Asked Questions",
     faqLists: [
       {
-        question: "Q1: What is a cataract?",
+        question: "What is a cataract?",
         answer:
-          "A: A clouding of the eye's natural lens, usually caused by aging. It might result in hazy vision, light sensitivity, and night blindness.",
+          "A clouding of the eye's natural lens, usually caused by aging. It might result in hazy vision, light sensitivity, and night blindness.",
       },
       {
         question:
-          "Q2: What type of cataract surgeries does Antardrishti Netralaya offer?",
+          "What type of cataract surgeries does Antardrishti Netralaya offer?",
         answer:
-          "A: We offer the latest techniques, including: Femto Laser-Assisted Cataract Surgery (FLACS), Microincision CataractSurgery (MICS), Phacoemulsification,Premium lens implantation (Multifocal, Toric, Trifocal IOLs)",
+          "We offer the latest techniques, including: Femto Laser-Assisted Cataract Surgery (FLACS), Microincision CataractSurgery (MICS), Phacoemulsification,Premium lens implantation (Multifocal, Toric, Trifocal IOLs)",
       },
       {
-        question: "Q3: What is Femto Cataract Surgery? ",
+        question: "What is Femto Cataract Surgery? ",
         answer:
-          "A: A blade-free, laser-assisted procedure that uses femtosecond laser technology to make precise cuts, disassemble the lens, and improve precision when implanting the lens — resulting in faster recovery and better visual outcomes. ",
+          "A blade-free, laser-assisted procedure that uses femtosecond laser technology to make precise cuts, disassemble the lens, and improve precision when implanting the lens — resulting in faster recovery and better visual outcomes. ",
       },
       {
-        question: "Q4: Will I need glasses after cataract surgery? ",
+        question: "Will I need glasses after cataract surgery? ",
         answer:
-          "A: With high-quality intraocular lenses (IOLs) like trifocal or multifocal lenses, patients are spectacle-free for most daily activities. Your eye surgeon will recommend the best lens for your lifestyle. ",
+          "With high-quality intraocular lenses (IOLs) like trifocal or multifocal lenses, patients are spectacle-free for most daily activities. Your eye surgeon will recommend the best lens for your lifestyle. ",
       },
       {
-        question: "Q5: Is cataract surgery painful?",
+        question: "Is cataract surgery painful?",
         answer:
-          "A: No. It is usually a painless 10-15 minute day-case procedure performed under local anaesthesia. Patients are discharged on the same day.",
+          "No. It is usually a painless 10-15 minute day-case procedure performed under local anaesthesia. Patients are discharged on the same day.",
       },
       {
-        question: "Q6: How soon can I return to my usual activities?",
+        question: "How soon can I return to my usual activities?",
         answer:
-          "A: The majority of the patients are on normal routine work within 1–2 days after surgery. Vision continues to improve in the first few weeks. ",
+          "The majority of the patients are on normal routine work within 1–2 days after surgery. Vision continues to improve in the first few weeks. ",
       },
       {
-        question: "Q7: Is cataract surgery safe?",
+        question: "Is cataract surgery safe?",
         answer:
-          "A: Yes. With modern technology and an experienced surgical team, cataract surgery is among the safest of surgical procedures with a very high success rate. ",
+          "Yes. With modern technology and an experienced surgical team, cataract surgery is among the safest of surgical procedures with a very high success rate. ",
       },
       {
-        question: "Q8: What sets Dada Laser Eye Institute apart?",
+        question: "What sets Antardrishti Netralaya apart?",
         answer:
-          "First to have introduced Femto Laser in Pune, Diagnostics and digital eye mapping conducted in-house, Personalized IOL selection according to your eyes' needs, NABH accreditation for top-level hygiene and care reading, Entire surgery enabled through AI-enabled precision systems",
+          "First to have introduced Femto Laser in Indore, Diagnostics and digital eye mapping conducted in-house, Personalized IOL selection according to your eyes' needs, NABH accreditation for top-level hygiene and care reading, Entire surgery enabled through AI-enabled precision systems",
       },
     ],
   },

@@ -8,8 +8,12 @@ import { useState } from "react";
 
 export default function App({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
-  const handleTogglecontactForm = () => {
-    setOpen(!open);
+  const handleTogglecontactForm = (value) => {
+    if (typeof value === "boolean") {
+      setOpen(value);
+    } else {
+      setOpen((prev) => !prev);
+    }
   };
   useUTMSource();
   return (
@@ -18,7 +22,7 @@ export default function App({ Component, pageProps }) {
       <Header handleTogglecontactForm={handleTogglecontactForm} />
 
       <Component {...pageProps} handleTogglecontactForm={handleTogglecontactForm} />
-      <Popup open={open} onClose={() => handleTogglecontactForm()}>
+      <Popup open={open} onClose={() => handleTogglecontactForm(false)}>
         <Form handleTogglecontactForm={handleTogglecontactForm}
         />
       </Popup>
