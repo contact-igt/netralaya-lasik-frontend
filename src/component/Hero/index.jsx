@@ -18,7 +18,7 @@ const Hero = ({handleTogglecontactForm}) => {
             <Form handleTogglecontactForm={handleTogglecontactForm} />
           </div>
           <div className={`${styles.layerNumber} w-100`}>
-            <Number />
+            <Number/>
           </div>
         </div>
       </div>
