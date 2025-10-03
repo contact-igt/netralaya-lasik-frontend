@@ -14,7 +14,7 @@ const Thankyou = () => {
 
             <div className={`${styles.videoContainer} mt-4`}>
                 <iframe
-                    src="https://www.youtube.com/embed/rtt4T5zz0Og?si=SsKqYZ2wa-jc11aE"
+                    src="https://www.youtube.com/embed/wUcA6ghzZxo?si=df4UUJd_Vt8AwKzU"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -32,7 +32,7 @@ const Thankyou = () => {
                 </ul>
             </div>
             <div className="mt-4">
-                <Button onClick={()=>router.push("/")} btnTitle="Back to Home" bgColor="#e1ba5c" textColor="#42474d" btnIcon={"arrow-right"} iconColor={"#42474d"} />
+                <Button link={"https://antardrashtinetralaya.com/"} btnTitle="Back to Home" bgColor="#e1ba5c" textColor="#42474d" btnIcon={"arrow-right"} iconColor={"#42474d"} />
             </div>
         </section>
     );

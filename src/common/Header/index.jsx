@@ -2,20 +2,19 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 import Button from "../Button";
 import { DynamicIcon } from "lucide-react/dynamic";
-import { useRouter } from "next/router";
 
 const Header = ({ handleTogglecontactForm }) => {
-  const router = useRouter();
   return (
     <header style={{ backgroundColor: "#fff9eb" }}>
       <div className="container">
         <div
           className={`${styles.headerwrapper} d-flex justify-content-between align-items-center py-2`}
         >
+          <a href="https://antardrashtinetralaya.com/" target="blank">
           <div className={styles.headerImg}>
-            <Image src={"/assets/logo2.png"} onClick={()=>router.push("/")} width={140} height={120} />
+            <Image src={"/assets/logo2.png"} width={140} height={120} />
           </div>
-
+          </a>
           <div className="d-none d-md-block">
             <div
               className={`${styles.headerCta} d-flex gap-3 align-items-center`}
