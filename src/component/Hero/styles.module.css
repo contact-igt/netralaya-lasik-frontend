@@ -15,6 +15,7 @@
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
+    position: absolute;
 }
 
 .layerText {
@@ -43,4 +44,123 @@
     bottom: 66px;
     background-color: #fdd87fa8;
     left: 0px;
+    position: absolute;
+}
+
+@media (width < 1400px) {
+    .layerText h4 {
+        font-size: 80px;
+    }
+
+    .layerText p {
+        width: 450px;
+        font-size: 35px;
+    }
+
+    .layerForm {
+        width: 450px;
+        top: 18%;
+        right: 5%;
+    }
+}
+
+@media (width < 1200px) {
+    .bgWrapper {
+        height: 800px;
+    }
+
+    .layerText {
+        top: 10%;
+    }
+
+    .layerText h4 {
+        font-size: 75px;
+    }
+
+    .layerText p {
+        font-size: 25px;
+        width: 300px;
+    }
+
+    .layerForm,
+    .layerText {
+        width: 400px;
+        top: 14%;
+    }
+
+
+}
+
+@media (width < 992px) {
+    .bgWrapper {
+        height: 480px;
+        padding-bottom: 80px;
+    }
+
+    .layerForm {
+        position: relative;
+        width: 100%;
+        margin: 50px 0px;
+        top: 0;
+        right: 0;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+
+    .layerText {
+        position: relative;
+        width: 100%;
+        text-align: start;
+        top: 5px;
+        left: 0;
+        padding: 50px 66px;
+    }
+
+    .layerNumber {
+        position: relative;
+        bottom: 0;
+        border-radius: 15px;
+    }
+
+    .layerText p {
+        width: 450px;
+    }
+}
+
+@media (width < 768px) {
+    .bgWrapper {
+        height: 430px;
+    }
+
+    .layerText h4 {
+        font-size: 60px;
+    }
+
+    .layerText p {
+        font-size: 24px;
+    }
+}
+
+@media (width < 576px) {
+    .bgWrapper {
+        height: 400px;
+    }
+
+    .layerText{
+        padding: 50px 27px;
+        top: 20px;
+    }
+
+    .layerText h4 {
+        font-size: 48px;
+    }
+
+    .layerText p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .layerForm {
+        padding: 20px;
+    }
 }

@@ -14,7 +14,10 @@
     transform: scale(1.03);
     transition: all 0.5s ease-in-out;
 }
-
+.pointsHeader{
+    margin-top: 5px;
+    font-weight: 600;
+}
 .cardWrapper h4,
 .abtCatractWrapper h4 {
     font-size: 30px;
@@ -58,6 +61,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 0.5rem;
+    cursor: pointer;
 }
 
 .dot {
@@ -80,7 +84,7 @@
     flex: 1;
     background: linear-gradient(180deg, #1f2937 0%, #1f2937 100%);
     margin-top: 0.5rem;
-    min-height: 40px;
+    min-height: 60px;
 }
 
 .content {
@@ -94,7 +98,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 0;
+    padding-top: 5px;
     background: none;
     border: none;
     cursor: pointer;
@@ -140,10 +144,44 @@
 .text {
     color: #a77d1b;
     font-size: 1rem;
-    line-height: 1.7;
-    margin: 0;
     padding-right: 2rem;
     font-weight: 600;
+}
+
+@media (max-width: 1400px) {
+    .cardWrapper h4,
+    .abtCatractWrapper h4 {
+        font-size: 28px;
+    }
+    .cardWrapper p,
+    .abtCatractWrapper p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cardWrapper h4,
+    .abtCatractWrapper h4 {
+        font-size: 26px;
+    }
+    .cardWrapper p,
+    .abtCatractWrapper p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cardWrapper h4,
+    .abtCatractWrapper h4 {
+        font-size: 24px;
+    }
+    .cardWrapper p,
+    .abtCatractWrapper p {
+        font-size: 15px;
+    }
+    .title {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -152,16 +190,47 @@
     }
 
     .title {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 
     .text {
-        font-size: 0.9375rem;
+        font-size: 0.9rem;
         padding-right: 0;
     }
 
     .dot {
         width: 14px;
         height: 14px;
+    }
+    .cardWrapper h4,
+    .abtCatractWrapper h4 {
+        font-size: 22px;
+    }
+    .cardWrapper p,
+    .abtCatractWrapper p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cardWrapper {
+        padding: 20px;
+    }
+    .abtQuestionWrapper {
+        padding: 20px 15px;
+    }
+    .cardWrapper h4,
+    .abtCatractWrapper h4 {
+        font-size: 20px;
+    }
+    .cardWrapper p,
+    .abtCatractWrapper p {
+        font-size: 13px;
+    }
+    .title {
+        font-size: 0.9rem;
+    }
+    .text {
+        font-size: 0.8rem;
     }
 }

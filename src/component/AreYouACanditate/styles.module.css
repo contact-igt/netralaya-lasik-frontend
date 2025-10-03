@@ -1,0 +1,154 @@
+.areYouCanditate {
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 40px;
+  text-align: start;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.conditionItem {
+  background: #deb24a;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  color: #42474d;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 280px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.conditionItem img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-top: 5px;
+}
+
+.conditionDescription {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.buttonGroup {
+  margin: 50px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonGroup button {
+  background-color: #a98927;
+  color: white;
+}
+
+.buttonGroup button:hover {
+  background-color: #a98927;
+  color: white;
+}
+
+.image {
+  object-position: top;
+}
+
+.yellowOverlay {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 12px; /* optional */
+}
+
+.yellowOverlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Balanced yellow gradient overlay */
+  background: linear-gradient(
+    to bottom,
+    rgba(222, 178, 74, 0.35) 0%,   /* soft but visible */
+    rgba(222, 178, 74, 0.30) 50%,  /* medium-light */
+    rgba(222, 178, 74, 0.1) 100%   /* fades nicely */
+  );
+
+  pointer-events: none;
+}
+
+/* Large screens */
+@media (width < 1200px) {
+  .conditionItem img {
+    height: 160px;
+  }
+}
+
+/* Medium screens */
+@media (width < 992px) {
+  .conditionItem img {
+    height: 150px;
+  }
+}
+
+/* Small screens */
+@media (width < 768px) {
+  .conditionItem img {
+    height: 140px;
+  }
+
+  .conditionItem {
+    height: 250px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .conditionDescription {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small screens */
+@media (width < 576px) {
+  .conditionItem img {
+    height: 150px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .conditionDescription {
+    font-size: 0.9rem;
+  }
+}

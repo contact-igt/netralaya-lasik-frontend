@@ -8,3 +8,39 @@
     border-radius: 10px;
     color: #fff;
 }
+
+
+@media (width < 992px) {
+
+    .countNums h6{
+        font-size: 30px;
+        color: #42474D;
+    }
+    
+    .countNums p{
+        font-size: 15px;
+        font-weight: 600;
+        color: #42474D;
+    }
+
+
+}
+
+
+@media (width < 576px) {
+
+    .countNums h6{
+        font-size: 20px;
+    }
+
+    .countNums p{
+        font-size: 13px;
+    }
+    
+    .countWrapper{
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+}
