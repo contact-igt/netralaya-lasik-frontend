@@ -8,9 +8,9 @@ export default function Home({ handleTogglecontactForm }) {
   return (
     <>
       <MetaTitle
-        title="Cataract - Best Eye Hospital in Indore"
-        description="Dr. Prateek Tiwari, Cataract Specialist at Antardrishti Netralaya, Indore. Trusted eye surgeon offering advanced technology and compassionate care."
-        keywords="cataract surgery, eye hospital Indore, Dr Prateek Tiwari, Antardrishti Netralaya"
+        title="Lasik - Best Eye Hospital in Indore"
+        description="Dr. Prateek Tiwari, Lasik Specialist at Antardrishti Netralaya, Indore. Trusted eye surgeon offering advanced technology and compassionate care."
+        keywords="Lasik surgery, eye hospital Indore, Dr Prateek Tiwari, Antardrishti Netralaya"
       />
       <HomePageComponent handleTogglecontactForm={handleTogglecontactForm} />
     </>

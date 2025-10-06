@@ -8,7 +8,7 @@ const About = ({ aboutData, handleTogglecontactForm }) => {
         <div className="row">
           <div className="col-lg-7">
             <div className={styles.aboutWrapper}>
-              <h4>Most Recognised Laser Eye Surgeon in India</h4>
+              <h4>Most Recognised Lasik Eye Surgeon in India</h4>
               <p>
                 Dr. Prateek Tiwari is a trusted Opthalmology surgeon associated
                 with Antardrishti Netralaya. Known for compassionate,

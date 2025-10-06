@@ -12,7 +12,7 @@ const Hero = ({handleTogglecontactForm}) => {
             <h4>Painless</h4>
             <h4>Precise</h4>
             <h4>Proven</h4>
-            <p>Cataract Surgery That Brings Life Into Focus</p>
+            <p>Lasik Surgery That Brings Life Into Focus</p>
           </div>
           <div className={`${styles.layerForm}`}>
             <Form handleTogglecontactForm={handleTogglecontactForm} />
