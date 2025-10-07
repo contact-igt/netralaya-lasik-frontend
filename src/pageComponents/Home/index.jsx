@@ -19,7 +19,7 @@ const HomePageComponent = ({ handleTogglecontactForm }) => {
           <div className="col-12 col-lg-8">
             <About aboutData={HomeConstantData?.About} handleTogglecontactForm={handleTogglecontactForm} />
             <AdvancedCataract
-              cataractData={HomeConstantData?.AdvancedCataract}
+              lasikData={HomeConstantData?.AdvancedCataract}
             />
             <HowItsUnique data={HomeConstantData?.HowItsUnique} />
             <AreYouACanditate data={HomeConstantData?.areYouACanditate} handleTogglecontactForm={handleTogglecontactForm} />

@@ -22,7 +22,7 @@ const TestimonialCard = ({
                 <div className={styles.nameContainer}>
                     <h5>{name}</h5>
                 </div>
-                <h6>Cataract Surgery</h6>
+                <h6>Lasik Surgery</h6>
             </div>
             <div className={styles.textContainer}>
                 <p>{testimonial}</p>

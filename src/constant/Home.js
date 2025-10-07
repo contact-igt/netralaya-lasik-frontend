@@ -26,55 +26,49 @@ export const HomeConstantData = {
       count: 4.9,
     },
   ],
-
+  About: {
+    name: "Dr Prateek Tiwari",
+    designation: "Ophthalmology - Visionary Eye Surgeon & Innovator",
+    image: "",
+    description:
+      "Dr. Prateek Tiwari is a trusted Opthalmology surgeon associated with Antardrishti Netralaya. Known for compassionate, patient-first care and modern surgical techniques, Dr. Tiwari blends advanced technology with clear communication so every patient feels informed, safe, and confident about their vision.",
+  },
   AdvancedCataract: {
     card: {
-      title: "What Is Cataract and Why Timely Treatment Matters",
+      title: "What Is LASIK and Why Timely Evaluation Matters",
       description:
-        "A cataract clouds the eye's natural lens, causing blurred vision, glare, and reduced ability to read, drive, and perform everyday activities.",
+        "LASIK reshapes the cornea with a precision laser to correct nearsightedness, farsightedness, and astigmatism—reducing or eliminating the need for glasses or contacts. A timely evaluation ensures your eyes are eligible, helps prevent dry-eye or night-glare issues, and leads to safer surgery with sharper visual outcomes.",
     },
     aboutExplain: {
-      title: "Advanced Cataract Surgery at Nihar Netralaya",
+      title: "Advanced LASIK at Nihar Netralaya",
       description:
-        "At Antardrishti Netralaya, cataract surgery isn’t just about removing a cloudy lens — it’s about restoring your vision with precision and confidence. With over 30+ years of expertise and advanced technology, we bring you the safest and most effective cataract treatments in Indore, such as:",
+        "At Antardrashti Netralaya, LASIK isn’t just about removing spectacles — it’s about restoring clear, comfortable vision with precision and confidence. With expert refractive surgeons and advanced diagnostics, we offer the safest and most effective vision-correction options in Indore, such as:",
     },
 
-    aboutQuestion: [
+    aboutPoints: [
       {
         id: 1,
-        question:
-          "Phacoemulsification with Premium IOLs – The Gold Standard in Cataract Surgery",
-        answer:
-          "Our experienced surgeons use an advanced, minimally invasive ultrasound technique to remove the cataract through a tiny incision. The cloudy lens is then replaced with a premium intraocular lens (IOL) tailored to your lifestyle and vision needs.",
-        points: [
-          "Clearer vision",
-          "Faster recovery",
-          "Reduced need for glasses",
-        ],
+        point: "Blade-free (Femto) LASIK with micro-precision flap creation",
       },
       {
         id: 2,
-        question: "Laser-Assisted Cataract Surgery (LACS)",
-        answer:
-          "Imagine cataract surgery where every step is guided by advanced laser technology instead of relying solely on handheld instruments. With LACS, our surgeons achieve unparalleled precision in lens placement and incisions—tailored exactly to your eye’s unique anatomy.",
-        pointsHeader: "What this means for you:",
-        points: [
-          "Sharper, clearer vision sooner",
-          "Greater safety and accuracy",
-          "A treatment customized for your eyes",
-        ],
+        point: "Topography/Wavefront-guided LASIK for personalised correction",
       },
       {
         id: 3,
-        question: "Microincision Cataract Surgery (MICS)",
-        answer:
-          "For patients seeking a faster, less invasive option, MICS uses an incision less than 2 mm—so small it often doesn’t require stitches. This ultra-fine technique reduces strain on the eye, promotes rapid healing, and helps you get back to daily life sooner.",
-        points: [
-          "Tiny incision = quicker healing",
-          "Reduced discomfort post-surgery",
-          "Lower risk of complications",
-          "Better visual outcomes with minimal trauma",
-        ],
+        point: "PRK/Surface Ablation for thin corneas or specific lifestyles",
+      },
+      {
+        id: 4,
+        point: "ICL/Lens-based options when LASIK isn’t suitable",
+      },
+      {
+        id: 5,
+        point: "Comprehensive pre-op mapping & post-op care for fast recovery",
+      },
+      {
+        id: 6,
+        point: "Most patients resume desk work in 24–48 hours",
       },
     ],
   },
@@ -84,62 +78,65 @@ export const HomeConstantData = {
       {
         title: "Advanced Eye Evaluation",
         description:
-          "Your eyes are thoroughly examined with modern diagnostic tools to select the most suitable premium IOL.",
+          "Your eyes are thoroughly examined with corneal topography, pachymetry, and wavefront analysis to confirm LASIK suitability and plan a personalized treatment.",
         icon: "eye",
       },
       {
-        title: "Minimally Invasive Surgery",
+        title: "Blade-Free Precision",
         description:
-          "Tiny incisions and advanced ultrasound/laser techniques ensure a safe and gentle procedure.",
+          "Femtosecond + excimer laser technology enables micro-accurate flap creation and corneal reshaping with minimal tissue interaction for a safer, gentler procedure.",
         icon: "activity",
       },
       {
-        title: "Premium Lens Options",
+        title: "Personalized Treatment Options",
         description:
-          "Customized IOLs tailored for sharper vision, reduced dependence on glasses, and long-term clarity.",
+          "Topography/Wavefront-guided LASIK for tailored correction; PRK/Surface Ablation for thin corneas; and ICL/lens-based options when LASIK isn’t ideal.",
         icon: "glasses",
       },
       {
         title: "Rapid Recovery",
         description:
-          "Most patients notice improved vision within days, with complete healing in just a few weeks.",
+          "Most patients notice clearer vision within 24–48 hours, with quick return to desk work and structured post-op care for comfort.",
         icon: "sparkles",
       },
       {
         title: "Trusted Expertise",
         description:
-          "30+ years of surgical experience and 10,000+ successful cataract surgeries in Indore.",
+          "Experienced refractive surgeons with strong outcomes and comprehensive follow-ups to ensure long-term visual clarity.",
         icon: "award",
       },
     ],
   },
   areYouACanditate: {
-    title: "Are You A Candidate For Cataract Surgery?",
-    description: "Cataract surgery is highly recommended if you",
-    cataractConditions: [
+    title: "Are You A Candidate For Lasik Surgery?",
+    description: "Lasik is highly recommended if you",
+    conditions: [
       {
-        title: "Have cloudy or blurred vision",
-        image: "/assets/AreYouACanditateImage1.jpg",
+        title: "Are 18–40 and have had a stable spectacle number for ~1 year",
+        image: "/assets/AreYouACanditateImage1.webp",
       },
       {
-        title: "Have trouble reading or driving at night",
-        image: "/assets/AreYouACanditateImage2.jpg",
+        title:
+          "Have nearsightedness, farsightedness, or astigmatism within treatable range",
+        image: "/assets/AreYouACanditateImage2.webp",
       },
       {
-        title: "Are over 50 and are diagnosed with cataract",
+        title:
+          "Want to reduce dependence on glasses/contacts for work, sports, or travel",
         image: "/assets/AreYouACanditateImage3.jpg",
       },
       {
-        title: "Wish to reduce dependence on glasses after surgery",
+        title:
+          "Have healthy eyes with adequate corneal thickness on evaluation",
         image: "/assets/AreYouACanditateImage4.jpg",
       },
       {
         title:
-          "Require a fast, stitch-free, and state-of-the-art laser-assisted procedure",
+          "Have no corneal disease or severe dry eye (we’ll screen during tests)",
         image: "/assets/testimonialTextImage2.jpg",
       },
       {
-        title: "Colors appearing faded or yellowish",
+        title: "Are not pregnant/breastfeeding and are in good general health",
         image: "/assets/AreYouACanditateImage6.jpg",
       },
     ],
@@ -147,40 +144,56 @@ export const HomeConstantData = {
     icon: "arrow-right",
   },
 
-  About: {
-    name: "Dr Prateek Tiwari",
-    designation: "Ophthalmology - Visionary Eye Surgeon & Innovator",
-    image: "",
-    description:
-      "Dr. Prateek Tiwari is a trusted Opthalmology surgeon associated with Antardrishti Netralaya. Known for compassionate, patient-first care and modern surgical techniques, Dr. Tiwari blends advanced technology with clear communication so every patient feels informed, safe, and confident about their vision.",
-  },
-
   InsightfulVideos: {
     title: "Insightful Words from Healthcare Heroes",
     testimonialContent: [
       {
-        name: "Chaturvedi",
+        name: "Sharda Bhide",
         imageSrc: "/assets/testimonialImage1.png",
         testimonial:
-          "I had vision problems in my left eye for over two months, and glasses didn’t help. I was scared of the injections before surgery, but the doctors guided me through it. The operation was a bit painful, yet my vision improved. Thanks to the medical team, I can see clearly again!",
+          "I had been wearing glasses for two years and often faced headaches, eye redness, and discomfort—especially while riding my scooter. I came to Antardrishti Netralaya for a check-up and was advised LASIK. Honestly, I was nervous at first, but the procedure was completely painless; only eye drops were used, no injections at all. Within a few hours, my vision became clear, and I experienced just mild redness and watery eyes, which quickly settled. I’m really happy with the results and relieved to be free from glasses.",
         videoUrl:
-          "https://www.youtube.com/embed/MvzLr7DodYg?si=M87X8m-y2MimFZGo",
+          "https://www.youtube.com/embed/IscY8aviGbU?si=KKmvGuIsHurO4xDV",
       },
       {
-        name: "Karnal Charanjit Nagarath",
+        name: "Yogya",
         imageSrc: "/assets/testimonialImage2.png",
         testimonial:
-          "I had trouble seeing colors and was diagnosed with cataracts in both eyes. I chose Center for Sight and Dr. Prateek Tiwari for surgery. Both surgeries were smooth, and the staff followed all protocols carefully. Now my vision is much clearer, and I can distinguish colors easily!",
+          "I’ve had a high hereditary power since childhood and always had to depend on glasses or contact lenses. I preferred lenses, but frequent infections made it difficult to continue. My mother had LASIK years ago, which inspired me to go for it too. After researching online, we consulted Dr. Tiwari, who explained everything clearly and gave me the best treatment option for my steep corneas. The surgery was completely painless, and the team made me feel comfortable despite my initial anxiety. Now I have perfect vision without dryness or discomfort—it feels amazing and truly life-changing.",
         videoUrl:
-          "https://www.youtube.com/embed/EaUCdR_nG5c?si=9r_WNXFtIDEVBdpC",
+          "https://www.youtube.com/embed/X7Jc1n8HYcA?si=WuUYRKdqK2kPugtr",
       },
       {
-        name: "Kamlesh Agrawal",
+        name: "Ashish Pandey",
+        imageSrc: "/assets/testimonialImage4.png",
+        testimonial:
+          "I’m a student and have been dealing with eye problems for a long time, but I try to explain concepts like connectivity and flags clearly, without relying on Google or Wikipedia. My focus is on making things straightforward and easy to understand, even with my vision challenges.",
+        videoUrl:
+          "https://www.youtube.com/embed/27z5PQVUwOM?si=RpVOAMn8rSYdU9o1",
+      },
+      {
+        name: "Dr. Tabassum Naz",
+        imageSrc: "/assets/testimonialImage5.png",
+        testimonial:
+          "I work as an HD Pathology specialist at M.B. Hospital in Indore. Recently, I performed my first operation on a nurse from N.I.B.I.L, and I’m thrilled to see her vision is now perfectly clear—she can read everything easily. It was a memorable experience for me, and I feel very happy and thankful that the surgery was successful.",
+        videoUrl:
+          "https://www.youtube.com/embed/v6KM9hwOkzY?si=4WT5_b1eIPsRIx7n",
+      },
+      {
+        name: "Abhishek Verma",
+        imageSrc: "/assets/testimonialImage6.png",
+        testimonial:
+          "I work in CCTV installation and sales, and wearing glasses often made my work uncomfortable and difficult. Over time, my vision worsened, and I decided to undergo LASIK surgery by Dr. Prateek Tiwari. The procedure was smooth, and by the very evening of the surgery, I noticed remarkable clarity. My vision improved even more the next day. I’m extremely happy with the results—my work has become much easier and my eyesight is better than ever.",
+        videoUrl:
+          "https://www.youtube.com/embed/N5Hc7A7ADV0?si=KjwbPtPpGUckX6X1",
+      },
+      {
+        name: "Our patient",
         imageSrc: "/assets/testimonialImage3.png",
         testimonial:
-          "I struggled with vision problems for about a year before consulting Dr. Prateek. The cataract surgery was painless and successful. Seven days later, my distance vision improved significantly, though I still need glasses for near tasks. The staff’s care and professionalism made the experience excellent!",
+          "I work as a store manager, and most of what I know about my job comes from my own research, especially through YouTube. It’s the second day of our ongoing project, and I’m focused on making progress. I also have a personal vision to achieve something significant, even if it means going beyond conventional limits or ‘without a license.",
         videoUrl:
-          "https://www.youtube.com/embed/qNG1-MIPEFw?si=pvaZxJulkeYkve_a",
+          "https://www.youtube.com/embed/6walmQt5hrM?si=fnvSUmqHVvPwnkLO",
       },
     ],
   },
@@ -188,9 +201,9 @@ export const HomeConstantData = {
     title: "Antardrishti Netralaya Testimonials",
     quoteIcon: "assets/quote.png",
     description:
-      "Consulted with Prateek sir regarding Cataract issue for my father. He diagnosed the issue quickly and recommended surgery. The surgery and post surgery experience was also very smooth. Prateek sir is very humble and friendly by nature. He explained the condition in a detailed manner and was always available whenever we had any doubts. Overall a great experience!",
-    name: "Riya Sheth",
-    content1description: "Cataract Integrated with Advanced Technology",
+      "Consulted with Dr. Prateek sir regarding my vision correction for LASIK. He diagnosed my condition quickly and recommended the best course of action. The entire procedure and post-surgery experience were also very smooth. Prateek sir is very humble and friendly by nature. He explained the condition in a detailed manner and was always available whenever I had any doubts. Overall a great experience!",
+    name: "Arjun Singh",
+    content1description: "LASIK Integrated with Advanced Technology",
     button1text: "Enquiry Now",
     button1icon: "arrow-right",
     content2description:
@@ -202,45 +215,64 @@ export const HomeConstantData = {
     title: "Frequently Asked Questions",
     faqLists: [
       {
-        question: "What is a cataract?",
+        question: "What is LASIK?",
         answer:
-          "A clouding of the eye's natural lens, usually caused by aging. It might result in hazy vision, light sensitivity, and night blindness.",
+          "A laser reshapes the cornea to correct myopia, hyperopia, and astigmatism—reducing or eliminating glasses/contacts.",
       },
       {
-        question:
-          "What type of cataract surgeries does Antardrishti Netralaya offer?",
+        question: "Who is eligible for LASIK?",
         answer:
-          "We offer the latest techniques, including: Femto Laser-Assisted Cataract Surgery (FLACS), Microincision CataractSurgery (MICS), Phacoemulsification,Premium lens implantation (Multifocal, Toric, Trifocal IOLs)",
+          "Typically ages 18–40 with a stable power (~1 year), healthy eyes, and adequate corneal thickness; we confirm in a full evaluation.",
       },
       {
-        question: "What is Femto Cataract Surgery? ",
+        question: "Is LASIK painful?",
         answer:
-          "A blade-free, laser-assisted procedure that uses femtosecond laser technology to make precise cuts, disassemble the lens, and improve precision when implanting the lens — resulting in faster recovery and better visual outcomes. ",
+          "No—numbing drops keep you comfortable; you may feel mild pressure and a few hours of scratchiness/watering.",
       },
       {
-        question: "Will I need glasses after cataract surgery? ",
+        question: "How fast is recovery?",
         answer:
-          "With high-quality intraocular lenses (IOLs) like trifocal or multifocal lenses, patients are spectacle-free for most daily activities. Your eye surgeon will recommend the best lens for your lifestyle. ",
+          "Many notice clearer vision within 24–48 hours and return to desk work quickly; eyedrops continue for a few weeks.",
       },
       {
-        question: "Is cataract surgery painful?",
+        question: "Can both eyes be treated the same day?",
         answer:
-          "No. It is usually a painless 10-15 minute day-case procedure performed under local anaesthesia. Patients are discharged on the same day.",
+          " Yes, most patients have both eyes treated in one sitting after clearance.",
       },
       {
-        question: "How soon can I return to my usual activities?",
+        question: "What if I’m not a candidate for LASIK?",
         answer:
-          "The majority of the patients are on normal routine work within 1–2 days after surgery. Vision continues to improve in the first few weeks. ",
+          "We’ll guide you to alternatives like PRK/surface ablation, ICL, or lens-based options based on safety and goals.",
       },
       {
-        question: "Is cataract surgery safe?",
+        question: "Will I still need glasses later?",
         answer:
-          "Yes. With modern technology and an experienced surgical team, cataract surgery is among the safest of surgical procedures with a very high success rate. ",
+          "Most daily tasks won’t need glasses; after 40, reading glasses may be needed (presbyopia)—we’ll discuss lens-based solutions if desired",
       },
       {
-        question: "What sets Antardrishti Netralaya apart?",
+        question: "Are there side effects or risks?",
         answer:
-          "First to have introduced Femto Laser in Indore, Diagnostics and digital eye mapping conducted in-house, Personalized IOL selection according to your eyes' needs, NABH accreditation for top-level hygiene and care reading, Entire surgery enabled through AI-enabled precision systems",
+          "Temporary dryness, glare/halos can occur and usually improve; serious complications are rare and discussed during consent.",
+      },
+      {
+        question: "How do you personalise treatment?",
+        answer:
+          "With corneal topography, pachymetry, and wavefront data to plan topography/wavefront-guided corrections tailored to your eyes.",
+      },
+      {
+        question: "What should I avoid after LASIK?",
+        answer:
+          "Rubbing eyes, dust/water exposure, heavy workouts, and makeup for a few days; follow our drop schedule and check-ups.",
+      },
+      {
+        question: "How much does LASIK cost?",
+        answer:
+          "Pricing varies by technology and eye parameters; transparent packages and EMI options are available—ask our team.",
+      },
+      {
+        question: "Why Antardrashti Netralaya for LASIK?",
+        answer:
+          "Expert refractive care, modern diagnostics, clear guidance, and 9 AM–9 PM access—all focused on safe outcomes and quick recovery.",
       },
     ],
   },
