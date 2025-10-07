@@ -1,8 +1,20 @@
 import Button from "@/common/Button";
 import styles from "./styles.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const Thankyou = () => {
+
+    const router = useRouter();
+
+    useEffect(() => {
+        const cameFromForm = sessionStorage.getItem("formSubmitted");
+
+        if (!cameFromForm) {
+            router.replace("/");
+        }
+    }, [router]);
 
     return (
         <section className={`${styles.container} d-flex justify-content-center align-items-center flex-column`}>
@@ -12,7 +24,7 @@ const Thankyou = () => {
 
             <div className={`${styles.videoContainer} mt-4`}>
                 <iframe
-                    src="https://www.youtube.com/embed/wUcA6ghzZxo?si=df4UUJd_Vt8AwKzU"
+                    src="https://www.youtube.com/embed/fa4sehxdPto?si=G4cPPaXZaXBiFXgx"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -26,7 +38,7 @@ const Thankyou = () => {
                     <li>
                         Our team will call or message you within 24 hours.
                     </li>
-                    <li>Prepare your questions about Cataract surgery.</li>
+                    <li>Prepare your questions about Lasik surgery.</li>
                 </ul>
             </div>
             <div className="mt-4">

@@ -17,7 +17,7 @@
     "react-dom": "19.1.0",
     "react-slick": "^0.31.0",
     "slick-carousel": "^1.8.1",
-    "vercel": "^48.1.6",
+    "vercel": "^48.2.0",
     "yup": "^1.7.1"
   },
   "devDependencies": {

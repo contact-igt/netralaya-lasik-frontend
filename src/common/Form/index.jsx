@@ -41,7 +41,7 @@ const Form = ({ handleTogglecontactForm }) => {
         });
 
         const res = await fetch(
-          "https://script.google.com/macros/s/AKfycby0V7V8j32RnoU3ymvynxDNaH1bwdZEx14WqBN2R26EcNrKEyB3qXAm8qwDAnWWJQxc/exec",
+          "https://script.google.com/macros/s/AKfycbzy7iVHer_zkbo7c3roIW1Dylrivhia8bL-ToTxUGM1pSEvdmaqfXgGntVMT4wzvMLdVg/exec",
           {
             method: "POST",
             headers: {
@@ -58,6 +58,7 @@ const Form = ({ handleTogglecontactForm }) => {
 
         Formik.resetForm();
         handleTogglecontactForm(false);
+        sessionStorage.setItem("formSubmitted", "true");
         router.replace("/thank-you");
       } catch (err) {
         console.error("Error:", err);
