@@ -12,7 +12,7 @@ const Thankyou = () => {
         const cameFromForm = sessionStorage.getItem("formSubmitted");
 
         if (!cameFromForm) {
-            router.replace("/");
+            router.push("/");
         }
     }, [router]);
 
