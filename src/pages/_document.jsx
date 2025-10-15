@@ -15,8 +15,9 @@ export default function Document() {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
         />
-
         <Script
+          id="gtm-script"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -25,7 +26,6 @@ export default function Document() {
                      })(window,document,'script','dataLayer','GTM-W7LWHJBR');`,
           }}
         />
-
         <Script
           dangerouslySetInnerHTML={{
             __html: `(function(c,l,a,r,i,t,y){
