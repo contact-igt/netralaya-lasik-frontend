@@ -54,6 +54,7 @@
 }
 
 .textContainer {
+  text-align: left;
   color: #000;
 }
 
@@ -69,8 +70,18 @@
 }
 
 .textContainer p {
-  margin: 5px 0;
+  margin: 5px 0 0;
   font-size: 0.85em;
+}
+.seeMoreBtn {
+  margin-top: 3px;
+  color: #42474d;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  font-size: 0.9rem;
 }
 
 .modal {
