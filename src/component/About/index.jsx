@@ -10,18 +10,16 @@ const About = ({ aboutData, handleTogglecontactForm }) => {
             <div className={styles.aboutWrapper}>
               <h4>Most Recognised Lasik Eye Surgeon in India</h4>
               <p>
-                Dr. Prateek Tiwari is a trusted Opthalmology surgeon associated
-                with Antardrishti Netralaya. Known for compassionate,
-                patient-first care and modern surgical techniques, Dr. Tiwari
-                blends advanced technology with clear communication so every
-                patient feels informed, safe, and confident about their vision.
+               {aboutData?.description}
               </p>
               <div className={styles.aboutBtn}>
                 <Button
                 onClick={handleTogglecontactForm}
-                  btnTitle={"Book Your Consultation Today !"}
+                  btnTitle={"Book Your Consultation Today"}
                   bgColor={"#a98927"}
                   textColor={"#ffff"}
+                  btnIcon={"arrow-right"}
+                  iconColor={"#ffff"}
                 />
               </div>
             </div>

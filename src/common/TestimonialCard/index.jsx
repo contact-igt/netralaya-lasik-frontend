@@ -1,34 +1,29 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { DynamicIcon } from "lucide-react/dynamic";
 import styles from "./styles.module.css";
 
-const TestimonialCard = ({
-    imageSrc,
-    openModal,
-    name,
-    testimonial
-}) => {
-    return (
-        <div className={styles.testimonialCard}>
-            <img src="/assets/logo2.png" alt="" className={styles.logo} />
-            <div className={styles.imageContainer}>
-                <img src={imageSrc} alt={name} className={styles.clientImage} />
-                <button
-                    onClick={openModal}
-                    className={styles.playButton}
-                >
-                    <DynamicIcon name="play" fill='#fff' color="#fff" size={32} />
-                </button>
-                <div className={styles.nameContainer}>
-                    <h5>{name}</h5>
-                </div>
-                <h6>Lasik Surgery</h6>
-            </div>
-            <div className={styles.textContainer}>
-                <p>{testimonial}</p>
-            </div>
+const TestimonialCard = ({ imageSrc, openModal, name, testimonial }) => {
+  return (
+    <div className={styles.testimonialCard}>
+      <img src="/assets/logo2.png" alt="" className={styles.logo} />
+      <div className={styles.imageContainer}>
+        <img src={imageSrc} alt={name} className={styles.clientImage} />
+        <button onClick={openModal} className={styles.playButton}>
+          <DynamicIcon name="play" fill="#fff" color="#fff" size={32} />
+        </button>
+        <div className={styles.nameContainer}>
+          <h5>{name}</h5>
         </div>
-    );
+        <h6>Lasik Surgery</h6>
+      </div>
+      <div className={styles.textContainer}>
+        <p>{testimonial}</p>
+        <button className={styles.seeMoreBtn} onClick={openModal}>
+          See more ...
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default TestimonialCard;

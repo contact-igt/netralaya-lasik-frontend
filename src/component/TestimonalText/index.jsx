@@ -13,7 +13,7 @@ const TestimonalText = ({ data, handleTogglecontactForm }) => {
                     <p>
                         {data?.description}
                     </p>
-                    <p className={styles.testimonialName}> {data?.name}</p>
+                    <p className={styles.testimonialName}> {` - ${data?.name}`}</p>
                 </div>
                 <div className={styles.testimonialMore}>
                     <div className={styles.moreContent1}>
@@ -27,7 +27,7 @@ const TestimonalText = ({ data, handleTogglecontactForm }) => {
                         <div className={styles.moreContent2Overlay}></div>
                         <div className={styles.content}>
                             <p>{data?.content2description}</p>
-                            <Button onClick={handleTogglecontactForm} textColor="#fff" bgColor="#a98927" btnTitle={data?.button2text} btnIcon={data?.bn2icon} iconColor="#fff" />
+                            <Button onClick={handleTogglecontactForm} textColor="#fff" bgColor="#a98927" btnTitle={data?.button2text} btnIcon={"arrow-right"} iconColor="#fff" />
                         </div>
                     </div>
                 </div>
