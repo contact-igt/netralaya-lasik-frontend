@@ -13,7 +13,7 @@ const TestimonalText = ({ data, handleTogglecontactForm }) => {
                     <p>
                         {data?.description}
                     </p>
-                    <p className={styles.testimonialName}> {data?.name}</p>
+                    <p className={styles.testimonialName}> {` - ${data?.name}`}</p>
                 </div>
                 <div className={styles.testimonialMore}>
                     <div className={styles.moreContent1}>

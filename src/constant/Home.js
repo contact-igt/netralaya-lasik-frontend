@@ -31,13 +31,13 @@ export const HomeConstantData = {
     designation: "Ophthalmology - Visionary Eye Surgeon & Innovator",
     image: "",
     description:
-      "Dr. Prateek Tiwari is a trusted Opthalmology surgeon associated with Antardrishti Netralaya. Known for compassionate, patient-first care and modern surgical techniques, Dr. Tiwari blends advanced technology with clear communication so every patient feels informed, safe, and confident about their vision.",
+      "Dr. Prateek Tiwari is a trusted Ophthalmology surgeon associated with Antardrashti Netralaya. Known for compassionate, patient-first care and modern surgical techniques, Dr. Tiwari blends advanced technology with clear communication so every patient feels informed, safe, and confident about their vision.",
   },
   AdvancedCataract: {
     card: {
-      title: "What Is LASIK and Why Timely Evaluation Matters",
+      title: "What Is LASIK and Why Timely Evaluation Matters ?",
       description:
-        "LASIK reshapes the cornea with a precision laser to correct nearsightedness, farsightedness, and astigmatism—reducing or eliminating the need for glasses or contacts. A timely evaluation ensures your eyes are eligible, helps prevent dry-eye or night-glare issues, and leads to safer surgery with sharper visual outcomes.",
+        "LASIK reshapes the cornea with a precision laser to correct nearsightedness, farsightedness, and astigmatism—reducing or eliminating the need for glasses or contact lenses. A timely evaluation ensures your eyes are eligible, helps prevent dry-eye or night-glare issues, and leads to safer surgery with sharper visual outcomes.",
     },
     aboutExplain: {
       title: "Advanced LASIK at Nihar Netralaya",
@@ -109,7 +109,7 @@ export const HomeConstantData = {
   },
   areYouACanditate: {
     title: "Are You A Candidate For Lasik Surgery?",
-    description: "Lasik is highly recommended if you",
+    description: "Lasik is highly recommended if you :",
     conditions: [
       {
         title: "Are 18–40 and have had a stable spectacle number for ~1 year",
@@ -145,13 +145,13 @@ export const HomeConstantData = {
   },
 
   InsightfulVideos: {
-    title: "Insightful Words from Healthcare Heroes",
+    title: "Insightful Words from Healthcare Heroes :",
     testimonialContent: [
       {
         name: "Sharda Bhide",
         imageSrc: "/assets/testimonialImage1.png",
         testimonial:
-          "I had been wearing glasses for two years and often faced headaches, eye redness, and discomfort—especially while riding my scooter. I came to Antardrishti Netralaya for a check-up and was advised LASIK. Honestly, I was nervous at first, but the procedure was completely painless; only eye drops were used, no injections at all. Within a few hours, my vision became clear, and I experienced just mild redness and watery eyes, which quickly settled. I’m really happy with the results and relieved to be free from glasses.",
+          "I had been wearing glasses for two years and often faced headaches, eye redness, and discomfort—especially while riding my scooter. I came to Antardrashti Netralaya for a check-up and was advised LASIK. Honestly, I was nervous at first, but the procedure was completely painless; only eye drops were used, no injections at all. Within a few hours, my vision became clear, and I experienced just mild redness and watery eyes, which quickly settled. I’m really happy with the results and relieved to be free from glasses.",
         videoUrl:
           "https://www.youtube.com/embed/IscY8aviGbU?si=KKmvGuIsHurO4xDV",
       },
@@ -198,10 +198,10 @@ export const HomeConstantData = {
     ],
   },
   TestimonalText: {
-    title: "Antardrishti Netralaya Testimonials",
+    title: "Antardrashti Netralaya Testimonials",
     quoteIcon: "assets/quote.png",
     description:
-      "Consulted with Dr. Prateek sir regarding my vision correction for LASIK. He diagnosed my condition quickly and recommended the best course of action. The entire procedure and post-surgery experience were also very smooth. Prateek sir is very humble and friendly by nature. He explained the condition in a detailed manner and was always available whenever I had any doubts. Overall a great experience!",
+      "Consulted with Dr. Prateek Sir regarding my vision correction for LASIK. He diagnosed my condition quickly and recommended the best course of action. The entire procedure and post-surgery experience were also very smooth. Prateek Sir is very humble and friendly by nature. He explained the condition in a detailed manner and was always available whenever I had any doubts. Overall a great experience!",
     name: "Arjun Singh",
     content1description: "LASIK Integrated with Advanced Technology",
     button1text: "Enquiry Now",
@@ -217,7 +217,7 @@ export const HomeConstantData = {
       {
         question: "What is LASIK?",
         answer:
-          "A laser reshapes the cornea to correct myopia, hyperopia, and astigmatism—reducing or eliminating glasses/contacts.",
+          "A laser reshapes the cornea to correct myopia, hyperopia, and astigmatism—reducing or eliminating glasses and contact lenses.",
       },
       {
         question: "Who is eligible for LASIK?",
@@ -227,7 +227,7 @@ export const HomeConstantData = {
       {
         question: "Is LASIK painful?",
         answer:
-          "No—numbing drops keep you comfortable; you may feel mild pressure and a few hours of scratchiness/watering.",
+          "No — Numbing drops keep you comfortable; you may feel mild pressure and a few hours of scratchiness/watering.",
       },
       {
         question: "How fast is recovery?",
@@ -267,12 +267,12 @@ export const HomeConstantData = {
       {
         question: "How much does LASIK cost?",
         answer:
-          "Pricing varies by technology and eye parameters; transparent packages and EMI options are available—ask our team.",
+          "Pricing varies by technology and eye parameters; transparent packages and EMI options are available — Ask our team.",
       },
       {
         question: "Why Antardrashti Netralaya for LASIK?",
         answer:
-          "Expert refractive care, modern diagnostics, clear guidance, and 9 AM–9 PM access—all focused on safe outcomes and quick recovery.",
+          "Expert refractive care, modern diagnostics, clear guidance, and 9.00 AM – 9.00 PM access—all focused on safe outcomes and quick recovery.",
       },
     ],
   },

@@ -30,7 +30,7 @@ const Thankyou = () => {
                 </ul>
             </div>
             <div className="mt-4">
-                <Button link={"https://antardrashtinetralaya.com/"} btnTitle="Back to Home" bgColor="#e1ba5c" textColor="#42474d" btnIcon={"arrow-right"} iconColor={"#42474d"} />
+                <Button link={"https://antardrashtinetralaya.com/"} btnTitle2="Back to Home" bgColor="#e1ba5c" textColor="#42474d" btnIcon={"arrow-left"} iconColor={"#42474d"} />
             </div>
         </section>
     );
