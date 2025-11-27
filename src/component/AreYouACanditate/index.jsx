@@ -13,7 +13,7 @@ const AreYouACanditate = ({ data, handleTogglecontactForm }) => {
       <div className="container mt-md-5 mt-3">
         <div className="row">
           {data?.conditions?.map((item, index) => (
-            <div className="col-xl-4 col-md-6 col-12">
+            <div key={index} className="col-xl-4 col-md-6 col-12">
               <div key={index} className={styles.conditionItem}>
                 <div>
                   <img

@@ -3,12 +3,14 @@ import Form from "@/common/Form";
 import Header from "@/common/Header";
 import { Popup } from "@/common/Popup";
 import useUTMSource from "@/hooks/useUTMSource";
+import 'slick-carousel/slick/slick.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'slick-carousel/slick/slick-theme.css';
 import "@/styles/globals.css";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const handleTogglecontactForm = (value) => {
     if (typeof value === "boolean") {
@@ -19,29 +21,18 @@ export default function App({ Component, pageProps }) {
   };
   useUTMSource();
 
-  useEffect(() => {
-    const pushPageview = (url) => {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: "pageview",
-        page: url,
-      });
-      console.log("GTM pageview event pushed:", url);
-    };
-
-    pushPageview(router.asPath);
-
-    const handleRouteChange = (url) => {
-      pushPageview(url);
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events, router.asPath]);
   return (
     <>
+      <Script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        strategy="beforeInteractive"
+      />
+
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" strategy="beforeInteractive"
+      />
+
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" strategy="afterInteractive"
+      />
 
       <Header handleTogglecontactForm={handleTogglecontactForm} />
 
