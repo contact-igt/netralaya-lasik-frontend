@@ -51,7 +51,6 @@ const Form = ({ handleTogglecontactForm }) => {
 
         if (!res.ok) throw new Error("Submission failed");
 
-
         const data = await res.json();
 
         Formik.resetForm();
