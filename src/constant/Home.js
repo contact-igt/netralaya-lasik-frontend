@@ -123,21 +123,21 @@ export const HomeConstantData = {
       {
         title:
           "Want to reduce dependence on glasses/contacts for work, sports, or travel",
-        image: "/assets/AreYouACanditateImage3.jpg",
+        image: "/assets/AreYouACanditateImage3.webp",
       },
       {
         title:
           "Have healthy eyes with adequate corneal thickness on evaluation",
-        image: "/assets/AreYouACanditateImage4.jpg",
+        image: "/assets/AreYouACanditateImage4.webp",
       },
       {
         title:
           "Have no corneal disease or severe dry eye (we’ll screen during tests)",
-        image: "/assets/testimonialTextImage2.jpg",
+        image: "/assets/testimonialTextImage2.webp",
       },
       {
         title: "Are not pregnant/breastfeeding and are in good general health",
-        image: "/assets/AreYouACanditateImage6.jpg",
+        image: "/assets/AreYouACanditateImage6.webp",
       },
     ],
     btnText: "Enquiry Now",
@@ -149,7 +149,7 @@ export const HomeConstantData = {
     testimonialContent: [
       {
         name: "Sharda Bhide",
-        imageSrc: "/assets/testimonialImage1.png",
+        imageSrc: "/assets/testimonialImage1.webp",
         testimonial:
           "I had been wearing glasses for two years and often faced headaches, eye redness, and discomfort—especially while riding my scooter. I came to Antardrashti Netralaya for a check-up and was advised LASIK. Honestly, I was nervous at first, but the procedure was completely painless; only eye drops were used, no injections at all. Within a few hours, my vision became clear, and I experienced just mild redness and watery eyes, which quickly settled. I’m really happy with the results and relieved to be free from glasses.",
         videoUrl:
@@ -157,7 +157,7 @@ export const HomeConstantData = {
       },
       {
         name: "Yogya",
-        imageSrc: "/assets/testimonialImage2.png",
+        imageSrc: "/assets/testimonialImage2.webp",
         testimonial:
           "I’ve had a high hereditary power since childhood and always had to depend on glasses or contact lenses. I preferred lenses, but frequent infections made it difficult to continue. My mother had LASIK years ago, which inspired me to go for it too. After researching online, we consulted Dr. Tiwari, who explained everything clearly and gave me the best treatment option for my steep corneas. The surgery was completely painless, and the team made me feel comfortable despite my initial anxiety. Now I have perfect vision without dryness or discomfort—it feels amazing and truly life-changing.",
         videoUrl:
@@ -165,7 +165,7 @@ export const HomeConstantData = {
       },
       {
         name: "Ashish Pandey",
-        imageSrc: "/assets/testimonialImage4.png",
+        imageSrc: "/assets/testimonialImage4.webp",
         testimonial:
           "I’m a student and have been dealing with eye problems for a long time, but I try to explain concepts like connectivity and flags clearly, without relying on Google or Wikipedia. My focus is on making things straightforward and easy to understand, even with my vision challenges.",
         videoUrl:
@@ -173,7 +173,7 @@ export const HomeConstantData = {
       },
       {
         name: "Dr. Tabassum Naz",
-        imageSrc: "/assets/testimonialImage5.png",
+        imageSrc: "/assets/testimonialImage5.webp",
         testimonial:
           "I work as an HD Pathology specialist at M.B. Hospital in Indore. Recently, I performed my first operation on a nurse from N.I.B.I.L, and I’m thrilled to see her vision is now perfectly clear—she can read everything easily. It was a memorable experience for me, and I feel very happy and thankful that the surgery was successful.",
         videoUrl:
@@ -181,7 +181,7 @@ export const HomeConstantData = {
       },
       {
         name: "Abhishek Verma",
-        imageSrc: "/assets/testimonialImage6.png",
+        imageSrc: "/assets/testimonialImage6.webp",
         testimonial:
           "I work in CCTV installation and sales, and wearing glasses often made my work uncomfortable and difficult. Over time, my vision worsened, and I decided to undergo LASIK surgery by Dr. Prateek Tiwari. The procedure was smooth, and by the very evening of the surgery, I noticed remarkable clarity. My vision improved even more the next day. I’m extremely happy with the results—my work has become much easier and my eyesight is better than ever.",
         videoUrl:
@@ -189,7 +189,7 @@ export const HomeConstantData = {
       },
       {
         name: "Our patient",
-        imageSrc: "/assets/testimonialImage3.png",
+        imageSrc: "/assets/testimonialImage3.webp",
         testimonial:
           "I work as a store manager, and most of what I know about my job comes from my own research, especially through YouTube. It’s the second day of our ongoing project, and I’m focused on making progress. I also have a personal vision to achieve something significant, even if it means going beyond conventional limits or ‘without a license.",
         videoUrl:
@@ -199,7 +199,7 @@ export const HomeConstantData = {
   },
   TestimonalText: {
     title: "Antardrashti Netralaya Testimonials",
-    quoteIcon: "assets/quote.png",
+    quoteIcon: "assets/quote.webp",
     description:
       "Consulted with Dr. Prateek Sir regarding my vision correction for LASIK. He diagnosed my condition quickly and recommended the best course of action. The entire procedure and post-surgery experience were also very smooth. Prateek Sir is very humble and friendly by nature. He explained the condition in a detailed manner and was always available whenever I had any doubts. Overall a great experience!",
     name: "Arjun Singh",

@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./styles.module.css";
 import Button from "../Button";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { MessageCircleMore, ArrowRight, Phone } from "lucide-react";
 
 const Header = ({ handleTogglecontactForm }) => {
   return (
@@ -10,51 +11,52 @@ const Header = ({ handleTogglecontactForm }) => {
         <div
           className={`${styles.headerwrapper} d-flex justify-content-between align-items-center py-2`}
         >
-          <a href="https://antardrashtinetralaya.com/" target="blank">
-          <div className={styles.headerImg}>
-            <Image src={"/assets/logo2.png"} alt="logo" width={140} height={120} />
-          </div>
-          </a>
+          <Link href="https://antardrashtinetralaya.com/" target="_blank">
+            <div className={styles.headerImg}>
+              <Image
+                src="/assets/logo2.webp"
+                alt="logo"
+                width={140}
+                height={120}
+                priority
+              />
+            </div>
+          </Link>
+
           <div className="d-none d-md-block">
             <div
               className={`${styles.headerCta} d-flex gap-3 align-items-center`}
             >
-              <div className={styles.callCta}>
-                <Button
-                  bgColor={"#fff"}
-                  btnIcon={"phone"}
-                  textColor={"#2F3032"}
-                  btnTitle2={"+91 9990110596"}
-                  link={"tel:+919990110596"}
-                  iconColor={"#ae8624"}
-                />
-              </div>
+              <Button
+                bgColor="#fff"
+                textColor="#2F3032"
+                link="tel:+919990110596"
+                btnIcon={"phone"}
+                iconColor={"#a98927"}
+                btnTitle2="+91 9990110596"
+              />
 
-              <div className={styles.enquiryCta}>
-                <Button
-                  onClick={handleTogglecontactForm}
-                  bgColor={"#a98927"}
-                  btnIcon={"arrow-right"}
-                  textColor={"#ffff"}
-                  btnTitle={"Enquiry Now"}
-                  iconColor={"#ffff"}
-                />
-              </div>
+              <Button
+                onClick={handleTogglecontactForm}
+                bgColor="#a98927"
+                textColor="#fff"
+                iconColor={"#ffff"}
+                btnIcon={"arrow-right"}
+                btnTitle="Enquiry Now"
+              />
             </div>
           </div>
+
           <div className="d-block d-md-none">
-            <div className="d-flex  gap-3 ">
-              <a href="tel:+919990110596">
+            <div className="d-flex gap-3">
+              <Link href="tel:+919990110596">
                 <div className={styles.ctabtn}>
-                  <DynamicIcon name="phone" size={22} color="#fff" />
+                  <Phone size={22} color="#fff" />
                 </div>
-              </a>
+              </Link>
+
               <div className={styles.ctabtn} onClick={handleTogglecontactForm}>
-                <DynamicIcon
-                  name="message-circle-more"
-                  size={22}
-                  color="#fff"
-                />
+                <MessageCircleMore size={22} color="#fff" />
               </div>
             </div>
           </div>
@@ -63,4 +65,5 @@ const Header = ({ handleTogglecontactForm }) => {
     </header>
   );
 };
+
 export default Header;

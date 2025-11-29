@@ -29,7 +29,7 @@ const About = ({ aboutData, handleTogglecontactForm }) => {
               <div className={styles.bgWrapper}></div>
 
               <div className={`${styles.bgimgWrapper} position-absolute`}>
-                <img src="\assets\profile2.png" className="img-fluid" />
+                <img src="\assets\profile2.webp" className="img-fluid" />
               </div>
 
               <div className={`${styles.imgDetail} text-center mt-3 `}>
