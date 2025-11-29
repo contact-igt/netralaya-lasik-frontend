@@ -12,6 +12,14 @@ export default function Document() {
           rel="stylesheet"
         />
 
+        {/* Preload hero image for better LCP */}
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/bgimage.webp"
+          fetchPriority="high"
+        />
+
         <Script
           id="gtm-script"
           strategy="lazyOnload"

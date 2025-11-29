@@ -15,6 +15,7 @@ const Hero = ({ handleTogglecontactForm }) => {
               alt="Cataract background"
               fill
               priority
+              fetchPriority="high"
               className={styles.bgImg}
               sizes="100vw"
             />
