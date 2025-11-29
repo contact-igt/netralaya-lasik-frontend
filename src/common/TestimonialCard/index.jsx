@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const TestimonialCard = ({ imageSrc, openModal, name, testimonial }) => {
   return (
     <div className={styles.testimonialCard}>
-      <img src="/assets/logo2.png" alt="" className={styles.logo} />
+      <img src="/assets/logo2.webp" alt="" className={styles.logo} />
       <div className={styles.imageContainer}>
         <img src={imageSrc} alt={name} className={styles.clientImage} />
         <button onClick={openModal} className={styles.playButton}>

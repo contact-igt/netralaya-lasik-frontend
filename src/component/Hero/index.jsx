@@ -11,7 +11,7 @@ const Hero = ({ handleTogglecontactForm }) => {
           {/* Optimized Background Image */}
           <div className={styles.bgWrapper}>
             <Image
-              src="/assets/bgimage.jpg"
+              src="/assets/bgimage.webp"
               alt="Cataract background"
               fill
               priority

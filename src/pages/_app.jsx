@@ -25,17 +25,17 @@ export default function App({ Component, pageProps }) {
     <>
       <Script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
-        strategy="beforeInteractive"
+        strategy="lazyOnload"
       />
 
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
       />
 
       <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
 
       <Header handleTogglecontactForm={handleTogglecontactForm} />
