@@ -10,11 +10,11 @@ const About = ({ aboutData, handleTogglecontactForm }) => {
             <div className={styles.aboutWrapper}>
               <h4>Most Recognised Lasik Eye Surgeon in India</h4>
               <p>
-               {aboutData?.description}
+                {aboutData?.description}
               </p>
               <div className={styles.aboutBtn}>
                 <Button
-                onClick={handleTogglecontactForm}
+                  onClick={handleTogglecontactForm}
                   btnTitle={"Book Your Consultation Today"}
                   bgColor={"#a98927"}
                   textColor={"#ffff"}
@@ -29,7 +29,7 @@ const About = ({ aboutData, handleTogglecontactForm }) => {
               <div className={styles.bgWrapper}></div>
 
               <div className={`${styles.bgimgWrapper} position-absolute`}>
-                <img src="\assets\profile2.webp" className="img-fluid" />
+                <img src="\assets\profile2.webp" className="img-fluid" loading="lazy" />
               </div>
 
               <div className={`${styles.imgDetail} text-center mt-3 `}>
