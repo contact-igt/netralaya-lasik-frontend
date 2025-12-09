@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "@/styles/globals.css";
 import { useState } from "react";
 import Script from "next/script";
+import Preloader from "@/common/Preloader";
 
 export default function App({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
@@ -38,6 +39,7 @@ export default function App({ Component, pageProps }) {
         strategy="lazyOnload"
       />
 
+      <Preloader />
       <Header handleTogglecontactForm={handleTogglecontactForm} />
 
       <Component
