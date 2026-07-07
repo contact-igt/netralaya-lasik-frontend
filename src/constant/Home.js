@@ -40,7 +40,7 @@ export const HomeConstantData = {
         "LASIK reshapes the cornea with a precision laser to correct nearsightedness, farsightedness, and astigmatism—reducing or eliminating the need for glasses or contact lenses. A timely evaluation ensures your eyes are eligible, helps prevent dry-eye or night-glare issues, and leads to safer surgery with sharper visual outcomes.",
     },
     aboutExplain: {
-      title: "Advanced LASIK at Nihar Netralaya",
+      title: "Advanced LASIK at Antardrashti Netralaya",
       description:
         "At Antardrashti Netralaya, LASIK isn’t just about removing spectacles — it’s about restoring clear, comfortable vision with precision and confidence. With expert refractive surgeons and advanced diagnostics, we offer the safest and most effective vision-correction options in Indore, such as:",
     },
