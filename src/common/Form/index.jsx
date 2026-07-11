@@ -4,6 +4,74 @@ import styles from "./styles.module.css";
 import * as Yup from "yup";
 import { useState } from "react";
 
+const GOOGLE_SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbzy7iVHer_zkbo7c3roIW1Dylrivhia8bL-ToTxUGM1pSEvdmaqfXgGntVMT4wzvMLdVg/exec";
+const REGISTER_ENDPOINT = "/api/v1/antardrashti-netralaya/register";
+const DEFAULT_SERVICE = "Lasik";
+
+const getIpAddress = async () => {
+  try {
+    const ipResponse = await fetch("https://api.ipify.org?format=json");
+
+    if (!ipResponse.ok) {
+      throw new Error("Failed to fetch IP address");
+    }
+
+    const ipData = await ipResponse.json();
+    return ipData?.ip || "unknown";
+  } catch (error) {
+    console.error("IP fetch failed:", error);
+    return "unknown";
+  }
+};
+
+const submitToBackend = async (payload) => {
+  const baseUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+  const clientKey = process.env.NEXT_PUBLIC_CLIENT_KEY;
+
+  if (!baseUrl || !clientKey) {
+    throw new Error("Backend environment variables are not configured");
+  }
+
+  const endpoint = new URL(REGISTER_ENDPOINT, baseUrl).toString();
+  const response = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-Client-Key": clientKey,
+    },
+    body: JSON.stringify(payload),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Backend submission failed with status ${response.status}`);
+  }
+
+  return response;
+};
+
+const submitToGoogleAppsScript = async (payload) => {
+  const params = new URLSearchParams();
+
+  Object.keys(payload).forEach((key) => {
+    params.append(key, payload[key]);
+  });
+
+  const response = await fetch(GOOGLE_SCRIPT_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: params.toString(),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Fallback submission failed with status ${response.status}`);
+  }
+
+  return response;
+};
+
 const Form = ({ handleTogglecontactForm }) => {
   const [loading, setisLoading] = useState(false);
   const formik = useFormik({
@@ -23,35 +91,30 @@ const Form = ({ handleTogglecontactForm }) => {
       try {
         setisLoading(true);
 
-        const ipResponse = await fetch("https://api.ipify.org?format=json");
-        const ipData = await ipResponse.json();
+        const ipAddress = await getIpAddress();
+        const utmSource = localStorage.getItem("utm_source") || "direct";
 
-        const Formdata = {
-          Name: value.name,
-          MobileNumber: value.mobile,
-          IP_Address: ipData.ip,
-          utm_source: localStorage.getItem("utm_source"),
+        const backendPayload = {
+          name: value.name,
+          mobile_number: value.mobile,
+          service: DEFAULT_SERVICE,
+          ip_address: ipAddress,
+          utm_source: utmSource,
         };
 
-        const params = new URLSearchParams();
-        Object.keys(Formdata).forEach((key) => {
-          params.append(key, Formdata[key]);
-        });
+        const fallbackPayload = {
+          Name: value.name,
+          MobileNumber: value.mobile,
+          IP_Address: ipAddress,
+          utm_source: utmSource,
+        };
 
-        const res = await fetch(
-          "https://script.google.com/macros/s/AKfycbzy7iVHer_zkbo7c3roIW1Dylrivhia8bL-ToTxUGM1pSEvdmaqfXgGntVMT4wzvMLdVg/exec",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
-            },
-            body: params.toString(),
-          }
-        );
-
-        if (!res.ok) throw new Error("Submission failed");
-
-        const data = await res.json();
+        try {
+          await submitToBackend(backendPayload);
+        } catch (backendError) {
+          console.error("Backend submission failed, falling back:", backendError);
+          await submitToGoogleAppsScript(fallbackPayload);
+        }
 
         Formik.resetForm();
         handleTogglecontactForm(false);
