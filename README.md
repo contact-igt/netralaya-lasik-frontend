@@ -2,6 +2,19 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Create a local env file before running the app:
+
+```bash
+cp .env.example .env.local
+```
+
+Required frontend-safe env vars:
+
+```env
+NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
+NEXT_PUBLIC_CLIENT_KEY=antardrashti_netralaya
+```
+
 First, run the development server:
 
 ```bash
