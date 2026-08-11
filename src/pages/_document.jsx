@@ -24,6 +24,25 @@ export default function Document() {
           fetchPriority="high"
         />
 
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11372966497"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-gtag-aw-11372966497"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'AW-11372966497');
+            `,
+          }}
+        />
+
         <Script
           id="gtm-script"
           strategy="lazyOnload"
