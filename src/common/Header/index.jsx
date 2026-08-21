@@ -30,10 +30,10 @@ const Header = ({ handleTogglecontactForm }) => {
               <Button
                 bgColor="#fff"
                 textColor="#2F3032"
-                link="tel:+919990110596"
+                link="tel:+917987360323"
                 btnIcon={"phone"}
                 iconColor={"#a98927"}
-                btnTitle2="+91 9990110596"
+                btnTitle2="+91 7987360323"
               />
 
               <Button
@@ -49,7 +49,7 @@ const Header = ({ handleTogglecontactForm }) => {
 
           <div className="d-block d-md-none">
             <div className="d-flex gap-3">
-              <Link href="tel:+919990110596">
+              <Link href="tel:+917987360323">
                 <div className={styles.ctabtn}>
                   <Phone size={22} color="#fff" />
                 </div>
